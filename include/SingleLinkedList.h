@@ -6,8 +6,7 @@
 #define SINGLELIST_H
 
 #include <iostream>
-
-template <typename T>
+template<typename  T>
 
 class SingleLinkedList {
     private:
