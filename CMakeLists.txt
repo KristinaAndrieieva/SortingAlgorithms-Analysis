@@ -10,6 +10,7 @@ set(SOURCES
         include/Array.h
         include/SingleLinkedList.h
         include/FileService.h
+        include/DoubleLinkedList.h
 )
 add_executable(SortingAlgorithms_Analysis ${SOURCES})
 target_include_directories(SortingAlgorithms_Analysis PRIVATE include)
