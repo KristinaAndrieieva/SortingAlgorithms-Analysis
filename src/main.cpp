@@ -8,9 +8,10 @@
 #include "FileService.h"
 
 int main() {
-    Array<int> array = FileService<int>::saveData("data.txt");
-    for (int i = 0; i < array.getSize(); i++) {
-        std::cout << array[i] << std::endl;
+    Array<int>* array = FileService<int>::saveData("data.txt");
+    for (int i = 0; i < array->getSize(); i++) {
+        std::cout << (*array)[i] << std::endl;
     }
-
+    delete array;
+    return 0;
 }

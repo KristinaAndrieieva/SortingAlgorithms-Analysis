@@ -19,6 +19,7 @@ public:
     Array() {
         data = nullptr;
         size = 0;
+        capacity = 0;
     };
 
     void alocate(int newcapacity) {
@@ -55,9 +56,6 @@ public:
     int getSize (){
         return size;
     }
-
-    Array(const Array& other) = delete;
-
 
 };
 #endif //ARRAY_H
