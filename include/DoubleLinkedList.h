@@ -13,6 +13,12 @@ private:
         T data;
         Node* next;
         Node* prev;
+
+        Node (T x){
+            data = x;
+            next = nullptr;
+            prev = nullptr;
+        }
     };
 
 };

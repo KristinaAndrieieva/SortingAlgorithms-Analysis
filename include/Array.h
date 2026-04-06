@@ -35,9 +35,10 @@ public:
         capacity = newcapacity;
     }
 
+
     void add (T x) {
          if (size == capacity) {
-             int newcapacity = (capacity == 0)? 1 : capacity * 2;
+             int newcapacity = (capacity == 0)? 1 : capacity + 1;
              alocate(newcapacity);
         }
 

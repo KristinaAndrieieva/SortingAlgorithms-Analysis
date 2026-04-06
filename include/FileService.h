@@ -14,16 +14,17 @@ template<typename  T>
 
 class FileService {
     public:
-    static Array <T>* saveData(const string& filename) {
+    static Array <T>* loadData(const string& filename) {
         ifstream file(filename);
         Array <T>* tempdata = new Array <T>;
+        T value;
 
         if (!file.is_open()) {
             cerr << "Can't open file " << filename << endl;
-            return tempdata;
+            delete tempdata;
+            return nullptr;
         }
 
-        T value;
         while (file >> value) {
             tempdata->add(value);
         }
