@@ -1,0 +1,4 @@
+# ninja log v6
+15	602	7972799624572694	build.ninja	234467a3f6a4a407
+12	1111	7960444467029239	CMakeFiles/SortingAlgorithms_Analysis.dir/src/main.cpp.obj	e2fc77b5763a1650
+1112	1729	7960444478027185	SortingAlgorithms_Analysis.exe	c9b2cc36d43ad38c

@@ -1,0 +1,3 @@
+C:/Users/krist/CLionProjects/SortingAlgorithms-Analysis/cmake-build-debug/CMakeFiles/SortingAlgorithms_Analysis.dir
+C:/Users/krist/CLionProjects/SortingAlgorithms-Analysis/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/krist/CLionProjects/SortingAlgorithms-Analysis/cmake-build-debug/CMakeFiles/rebuild_cache.dir

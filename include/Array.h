@@ -50,6 +50,14 @@ public:
         return data[index];
     }
 
+    void set (T x ,int index) {
+        if (index <= size && index >= 0) {
+            data[index] = x;
+        } else {
+            std::cout << "index out of range" << std::endl;
+        }
+    }
+
     T findMax () {
         if (size == 0) {
             return T();

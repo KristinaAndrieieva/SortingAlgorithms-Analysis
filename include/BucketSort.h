@@ -45,7 +45,7 @@ class BucketSort {
 
         for (int i = 0; i < countBucket; i++) {
             for (int j = 0; j < buckets[i] -> getSize(); j++) {
-                arr.setValue(j, buckets[i] -> getValue(j));
+                arr.set(j, buckets[i] -> getValue(j));
             }
             delete[] buckets[i];
         }
