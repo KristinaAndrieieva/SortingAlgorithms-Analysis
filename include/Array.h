@@ -36,7 +36,7 @@ public:
     }
 
 
-    void add (T x) {
+    void set (T x) {
          if (size == capacity) {
              int newcapacity = (capacity == 0)? 1 : capacity + 1;
              alocate(newcapacity);
@@ -49,6 +49,40 @@ public:
     T& operator[](int index) {
         return data[index];
     }
+
+    T findMax () {
+        if (size == 0) {
+            return T();
+        }
+
+        T max = data[0];
+        for (int i = 1; i < size; i++) {
+            if (max < data[i]) {
+                max = data[i];
+            }
+        }
+            return max;
+    }
+
+
+    T findMin () {
+        if (size == 0) {
+            return T();
+        }
+
+        T min = data[0];
+        for (int i = 1; i < size; i++) {
+            if (min > data[i]) {
+                min = data[i];
+            }
+        }
+        return min;
+    }
+
+    T getValue (int index) {
+        return data[index];
+    }
+
 
     ~Array() {
         delete[] data;

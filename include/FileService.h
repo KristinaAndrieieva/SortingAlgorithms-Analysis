@@ -26,7 +26,7 @@ class FileService {
         }
 
         while (file >> value) {
-            tempdata->add(value);
+            tempdata->set(value);
         }
 
         file.close();

@@ -11,6 +11,8 @@ set(SOURCES
         include/SingleLinkedList.h
         include/FileService.h
         include/DoubleLinkedList.h
+        include/BucketSort.h
+        include/QuickSort.h
 )
 add_executable(SortingAlgorithms_Analysis ${SOURCES})
 target_include_directories(SortingAlgorithms_Analysis PRIVATE include)
