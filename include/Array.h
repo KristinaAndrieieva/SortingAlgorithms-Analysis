@@ -6,6 +6,10 @@
 #define ARRAY_H
 
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
 template<typename  T>
 
 class Array {
@@ -85,6 +89,10 @@ public:
             }
         }
         return min;
+    }
+
+    int RandomIndex(){
+        return rand()%size;
     }
 
     T getValue (int index) {

@@ -4,11 +4,12 @@
 
 #ifndef FILE_SERVICE_H
 #define FILE_SERVICE_H
-#include "Array.h"
-
 #endif //FILE_SERVICE_H
+
+#include "Array.h"
 #include <iostream>
 #include <fstream>
+
 using namespace std;
 template<typename  T>
 

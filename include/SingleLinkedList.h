@@ -6,6 +6,8 @@
 #define SINGLELIST_H
 
 #include <iostream>
+
+using namespace std;
 template<typename  T>
 
 class SingleLinkedList {

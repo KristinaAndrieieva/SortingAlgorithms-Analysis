@@ -4,9 +4,12 @@
 
 #ifndef BUCKETSORT_H
 #define BUCKETSORT_H
+
 #include "Array.h"
 #include "QuickSort.h"
+#include <iostream>
 
+using namespace std;
 template<typename  T>
 
 class BucketSort {
@@ -20,6 +23,7 @@ class BucketSort {
         if (size <= 1) {
             return;
         }
+
         T maxValue = arr.findMax();
         T minValue = arr.findMin();
         T countBucket = maxValue - minValue + 1;
@@ -33,7 +37,7 @@ class BucketSort {
 
         for (int i = 0; i < size; i++) {
             T value = arr.getValue(i);
-            index = (int)(value - minValue)* (countBucket-1) / (maxValue - minValue);
+            index = (int)(value - minValue) * (countBucket-1) / (maxValue - minValue);
             buckets[index] -> set(value);
         }
 

@@ -7,8 +7,14 @@
 #include "Array.h"
 #include "BucketSort.h"
 #include "FileService.h"
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
 
 int main() {
+    srand(time(NULL));
+
     Array<int>* array = FileService<int>::loadData("data.txt");
     if (array != nullptr) {
         BucketSort<int>::bucketSortArray(*array);
