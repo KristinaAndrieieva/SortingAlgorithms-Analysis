@@ -15,6 +15,7 @@ template<typename  T>
 
 class FileService {
     public:
+
     static Array <T>* loadData(const string& filename) {
         ifstream file(filename);
         Array <T>* tempdata = new Array <T>;

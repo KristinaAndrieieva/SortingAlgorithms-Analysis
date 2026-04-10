@@ -12,28 +12,39 @@
 using namespace std;
 template<typename  T>
 
-class QuickSort{
+class QuickSort {
 public:
-    QuickSort();
 
-    void static quickSortArray(Array <T>& arr, string pivotStr) {
-        int size = arr.getSize();
-        if (size < 1) {
+    void static quickSortArray(Array <T>& arr, string pivotStr,int left,int right) {
+        if (left >= right) {
             return;
         }
-        int left = 0, right = size - 1;
-        int pivot,i;
+        int pivotIndex;
+
 
         if (pivotStr == "Centre") {
-            i = (left + right) / 2;
+            pivotIndex = (left + right) / 2;
         }else if (pivotStr == "Left") {
-            i = left;
+            pivotIndex = left;
         } else if (pivotStr == "Random") {
-            i = arr.RandomIndex();
+            pivotIndex = arr.RandomIndex();
         }
 
-        pivot = arr[i];
-        arr[i] = arr[right];
+        T pivotValue = arr[pivotIndex];
 
+        arr.swap(&arr[pivotIndex],&arr [right]);
+
+        int j = left;
+        for (int i = left; i < right; i++ ) {
+            if (arr[i] < pivotValue) {
+                arr.swap(&arr[i],&arr [j]);
+                j++;
+            }
+
+        };
+
+        arr.swap(&arr[j],&arr [right]);
+        quickSortArray(arr,pivotStr,left,j - 1);
+        quickSortArray(arr,pivotStr,j + 1,right);
     };
 };

@@ -14,9 +14,7 @@ template<typename  T>
 
 class BucketSort {
 
-
     public:
-    BucketSort();
 
     void static bucketSortArray(Array <T>& arr) {
         int size = arr.getSize();
@@ -26,7 +24,7 @@ class BucketSort {
 
         T maxValue = arr.findMax();
         T minValue = arr.findMin();
-        T countBucket = maxValue - minValue + 1;
+        int countBucket = maxValue - minValue + 1;
         int index;
 
         Array <T>** buckets = new Array <T>*[countBucket];
@@ -37,21 +35,21 @@ class BucketSort {
 
         for (int i = 0; i < size; i++) {
             T value = arr.getValue(i);
-            index = (int)(value - minValue) * (countBucket-1) / (maxValue - minValue);
+            index = (int)((double)(value - minValue) / (maxValue - minValue) * (countBucket - 1));
             buckets[index] -> set(value);
         }
 
+        int currentIdx = 0;
         for (int i = 0; i < countBucket; i++) {
             if (buckets[i] -> getSize() > 1) {
-                QuickSort<T>::quickSortArray(*buckets[i]);
+                QuickSort <T> ::quickSortArray(*buckets[i],"Centre",0,buckets[i] -> getSize() - 1);
             }
-        }
 
-        for (int i = 0; i < countBucket; i++) {
             for (int j = 0; j < buckets[i] -> getSize(); j++) {
-                arr.set(j, buckets[i] -> getValue(j));
+                arr.set(buckets[i]->getValue(j), currentIdx);
+                currentIdx++;
             }
-            delete[] buckets[i];
+            delete buckets[i];
         }
 
         delete[] buckets;

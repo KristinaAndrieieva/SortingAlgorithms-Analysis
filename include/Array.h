@@ -62,6 +62,8 @@ public:
         }
     }
 
+
+
     T findMax () {
         if (size == 0) {
             return T();
@@ -97,6 +99,13 @@ public:
 
     T getValue (int index) {
         return data[index];
+    }
+
+
+    void swap (T* a,T* b) {
+        T temp = *a;
+        *a = *b;
+        *b = temp;
     }
 
 
