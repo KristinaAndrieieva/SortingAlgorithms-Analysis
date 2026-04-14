@@ -54,7 +54,6 @@ public:
 
         if (file >> size) {
             for (int i = 0; i < size; i++) {
-                T value;
                 if (file >> value) {
                     tempdata->pushBack(value);
                 } else {

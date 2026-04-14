@@ -52,12 +52,55 @@ public:
         quickSortArray(arr,pivotStr,j + 1,right);
     };
 
+
     static void quickSortList(SingleLinkedList<T>& list, string pivotStr,
                               typename SingleLinkedList<T>::Node* left,
                               typename SingleLinkedList<T>::Node* right) {
-        if (!left || !right || left == right || left == right->next) {
-            return;
+
+        if (!left || !right || left == right || left == right->next) return;
+
+
+        typename SingleLinkedList<T>::Node* pivotNode = left;
+
+        if (pivotStr == "Centre") {
+            typename SingleLinkedList<T>::Node* fast = left;
+            while (fast != right && fast->next != right) {
+                pivotNode = pivotNode->next;
+                fast = fast->next->next;
+            }
         }
+        else if (pivotStr == "Random") {
+            int distance = 0;
+            typename SingleLinkedList<T>::Node* temp = left;
+            while (temp != right) { distance++; temp = temp->next; }
+            int randomIndex = rand() % (distance + 1);
+            pivotNode = left;
+            for (int k = 0; k < randomIndex; k++) pivotNode = pivotNode->next;
+        }
+        else if (pivotStr == "Right") {
+            pivotNode = right;
+        }
+
+
+        T pivotValue = pivotNode->data;
+        list.swap(pivotNode, right);
+
+        typename SingleLinkedList<T>::Node* j = left;
+        for (typename SingleLinkedList<T>::Node* i = left; i != right; i = i->next) {
+            if ((i->data)< pivotValue) {
+                list.swap(i, j);
+                j = j->next;
+            }
+        }
+        list.swap(j, right);
+        typename SingleLinkedList<T>::Node* actualPivot = j;
+
+        if (actualPivot != left) {
+            typename SingleLinkedList<T>::Node* prev = left;
+            while (prev->next != actualPivot) prev = prev->next;
+            quickSortList(list, pivotStr, left, prev);
+        }
+        quickSortList(list, pivotStr, actualPivot->next, right);
     }
 };
 #endif //QUICKSORT_H

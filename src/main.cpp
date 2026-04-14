@@ -31,8 +31,6 @@ int main(int argc, char** argv) {
 
 
     if (Parameters::runMode == Parameters::RunModes::singleFile) {
-
-
         if (Parameters::inputFile.empty()) {
             cerr << "Blad: Nie podano pliku wejsciowego (-i)!" << endl;
             return 1;
@@ -40,8 +38,6 @@ int main(int argc, char** argv) {
 
 
         if (Parameters::dataType == Parameters::DataTypes::typeInt) {
-
-
             if (Parameters::structure == Parameters::Structures::array) {
                 Array<int>* array = FileService<int>::loadDataArray(Parameters::inputFile);
 
@@ -64,12 +60,39 @@ int main(int argc, char** argv) {
                 cout << endl;
 
                 delete array;
+            }else if (Parameters::structure == Parameters::Structures::singleList) {
+                SingleLinkedList<int>* slist = FileService<int>::loadDataSingleLinkedlist(Parameters::inputFile);
+                if (slist == nullptr) return 1;
+
+                if (Parameters::algorithm == Parameters::Algorithms::quick) {
+
+                    string pStr = "Right";
+                    if (Parameters::pivot == Parameters::Pivots::left) pStr = "Left";
+                    else if (Parameters::pivot == Parameters::Pivots::middle) pStr = "Centre";
+                    else if (Parameters::pivot == Parameters::Pivots::random) pStr = "Random";
+
+
+                    if (slist->head != nullptr) {
+                        QuickSort<int>::quickSortList(*slist, pStr, slist->head, slist->getTail());
+                    }
+                }
+
+                SingleLinkedList<int>::Node* curr = slist->head;
+                while (curr != nullptr) {
+                    cout << curr->data << " ";
+                    curr = curr->next;
+                }
+                cout << endl;
+
+                delete slist;
+
+
             }
         }
-    }
-    else if (Parameters::runMode == Parameters::RunModes::benchmark) {
-        cout << "Tryb benchmark nie jest jeszcze w pelni zaimplementowany." << endl;
-    }
+        else if (Parameters::runMode == Parameters::RunModes::benchmark) {
+            cout << "Tryb benchmark nie jest jeszcze w pelni zaimplementowany." << endl;
+        }
 
-    return 0;
+        return 0;
+    }
 }
