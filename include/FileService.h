@@ -4,6 +4,7 @@
 
 #ifndef FILE_SERVICE_H
 #define FILE_SERVICE_H
+#include "SingleLinkedList.h"
 #endif //FILE_SERVICE_H
 
 #include "Array.h"
@@ -16,9 +17,34 @@ template<typename  T>
 class FileService {
     public:
 
-    static Array <T>* loadData(const string& filename) {
+    static Array <T>* loadDataArray(const string& filename) {
         ifstream file(filename);
         Array <T>* tempdata = new Array <T>;
+        int size ;
+        T value;
+
+        if (!file.is_open()) {
+            cerr << "Can't open file " << filename << endl;
+            delete tempdata;
+            return nullptr;
+        }
+        if (file >> size ) {
+            cout << size << " elementow w pliku" << endl;
+        }
+
+        while (file >> value) {
+            tempdata->set(value);
+        }
+
+        file.close();
+        return tempdata;
+    }
+
+
+    static SingleLinkedList<T>* loadDataSingleLinkedlist(const string& filename) {
+        ifstream file(filename);
+        SingleLinkedList<T>* tempdata = new SingleLinkedList<T>;
+        int size;
         T value;
 
         if (!file.is_open()) {
@@ -27,9 +53,11 @@ class FileService {
             return nullptr;
         }
 
-        while (file >> value) {
-            tempdata->set(value);
+        if (file >> size ) {
+            cout << size << " elementow w pliku" << endl;
         }
+
+        while (file >> value) tempdata->pushBack(value);
 
         file.close();
         return tempdata;

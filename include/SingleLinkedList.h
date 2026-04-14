@@ -23,6 +23,7 @@ class SingleLinkedList {
     };
 
     Node* head;
+    Node* tail;
     int size;
 
     public:
@@ -39,6 +40,19 @@ class SingleLinkedList {
         Node* newNode = new Node(x);
         newNode->next = head;
         head = newNode;
+        if (tail == nullptr) tail == head;
+        size++;
+    }
+
+    void pushBack(T x) {
+        Node* newNode = new Node(x);
+        if (head == nullptr) {
+            head = tail = newNode;
+        } else {
+            tail->next = newNode;
+            tail = newNode;
+        }
+        size++;
     }
 
     void clear() {}
