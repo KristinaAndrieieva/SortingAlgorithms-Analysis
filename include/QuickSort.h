@@ -4,10 +4,11 @@
 
 #ifndef QUICKSORT_H
 #define QUICKSORT_H
-#endif //QUICKSORT_H
+
 
 #include <iostream>
 #include <string>
+#include <ctime>
 
 using namespace std;
 template<typename  T>
@@ -15,7 +16,8 @@ template<typename  T>
 class QuickSort {
 public:
 
-    void static quickSortArray(Array <T>& arr, string pivotStr,int left,int right) {
+    static void quickSortArray(Array <T>& arr, string pivotStr,int left,int right) {
+        srand(time(NULL));
         if (left >= right) {
             return;
         }
@@ -27,7 +29,9 @@ public:
         }else if (pivotStr == "Left") {
             pivotIndex = left;
         } else if (pivotStr == "Random") {
-            pivotIndex = arr.RandomIndex();
+            pivotIndex = left + rand() % (right - left + 1);
+        }else if (pivotStr == "Right") {
+            pivotIndex = right;
         }
 
         T pivotValue = arr[pivotIndex];
@@ -47,4 +51,7 @@ public:
         quickSortArray(arr,pivotStr,left,j - 1);
         quickSortArray(arr,pivotStr,j + 1,right);
     };
+
+
 };
+#endif //QUICKSORT_H

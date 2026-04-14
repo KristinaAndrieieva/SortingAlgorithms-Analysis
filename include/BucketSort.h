@@ -16,7 +16,7 @@ class BucketSort {
 
     public:
 
-    void static bucketSortArray(Array <T>& arr) {
+    static void bucketSortArray(Array <T>& arr) {
         int size = arr.getSize();
         if (size <= 1) {
             return;

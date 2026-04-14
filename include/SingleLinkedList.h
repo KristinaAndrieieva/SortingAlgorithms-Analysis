@@ -29,8 +29,9 @@ class SingleLinkedList {
     public:
     SingleLinkedList() {
         head = nullptr;
+        tail = nullptr;
         size = 0;
-    };
+    }
 
     ~SingleLinkedList() {
         clear();

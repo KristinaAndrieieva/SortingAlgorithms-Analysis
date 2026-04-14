@@ -39,11 +39,18 @@ public:
         capacity = newcapacity;
     }
 
+    void reserve(int newCapacity) {
+        if (data != nullptr) delete[] data;
+        data = new T[newCapacity];
+        capacity = newCapacity;
+        size = 0;
+    }
+
 
     void set (T x) {
-         if (size == capacity) {
-             int newcapacity = (capacity == 0)? 1 : capacity + 1;
-             alocate(newcapacity);
+        if (size == capacity) {
+            int newcapacity = (capacity == 0)? 1 : capacity + 1;
+            alocate(newcapacity);
         }
 
         data[size] = x;
@@ -75,7 +82,7 @@ public:
                 max = data[i];
             }
         }
-            return max;
+        return max;
     }
 
 
@@ -91,10 +98,6 @@ public:
             }
         }
         return min;
-    }
-
-    int RandomIndex(){
-        return rand()%size;
     }
 
     T getValue (int index) {

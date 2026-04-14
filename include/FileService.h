@@ -4,9 +4,8 @@
 
 #ifndef FILE_SERVICE_H
 #define FILE_SERVICE_H
-#include "SingleLinkedList.h"
-#endif //FILE_SERVICE_H
 
+#include "SingleLinkedList.h"
 #include "Array.h"
 #include <iostream>
 #include <fstream>
@@ -15,7 +14,7 @@ using namespace std;
 template<typename  T>
 
 class FileService {
-    public:
+public:
 
     static Array <T>* loadDataArray(const string& filename) {
         ifstream file(filename);
@@ -53,14 +52,21 @@ class FileService {
             return nullptr;
         }
 
-        if (file >> size ) {
-            cout << size << " elementow w pliku" << endl;
+        if (file >> size) {
+            for (int i = 0; i < size; i++) {
+                T value;
+                if (file >> value) {
+                    tempdata->pushBack(value);
+                } else {
+                    break;
+                }
+            }
         }
-
-        while (file >> value) tempdata->pushBack(value);
 
         file.close();
         return tempdata;
     }
 
 };
+
+#endif //FILE_SERVICE_H

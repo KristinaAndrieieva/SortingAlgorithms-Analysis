@@ -16,7 +16,9 @@ set(SOURCES
         include/ShellSort.h
         lib/Parameters.h
         lib/Parameters.cpp
+        include/Controller.h
 )
 add_executable(SortingAlgorithms_Analysis ${SOURCES})
 target_include_directories(SortingAlgorithms_Analysis PRIVATE include)
+target_include_directories(SortingAlgorithms_Analysis PRIVATE include lib)
 target_compile_options(SortingAlgorithms_Analysis PRIVATE -Wall -Wextra)
