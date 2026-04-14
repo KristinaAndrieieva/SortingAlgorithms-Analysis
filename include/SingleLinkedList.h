@@ -40,7 +40,7 @@ class SingleLinkedList {
         Node* newNode = new Node(x);
         newNode->next = head;
         head = newNode;
-        if (tail == nullptr) tail == head;
+        if (tail == nullptr) tail = head;
         size++;
     }
 

@@ -24,7 +24,7 @@ class BucketSort {
 
         T maxValue = arr.findMax();
         T minValue = arr.findMin();
-        int countBucket = maxValue - minValue + 1;
+        int countBucket = (int)maxValue - minValue + 1;
         int index;
 
         Array <T>** buckets = new Array <T>*[countBucket];

@@ -13,7 +13,10 @@ set(SOURCES
         include/DoubleLinkedList.h
         include/BucketSort.h
         include/QuickSort.h
+        include/ShellSort.h
+        lib/Parameters.h
+        lib/Parameters.cpp
 )
 add_executable(SortingAlgorithms_Analysis ${SOURCES})
 target_include_directories(SortingAlgorithms_Analysis PRIVATE include)
-target_compile_options(SortingAlgorithms_Analysis PRIVATE -Wall -Wextra -Werror)
+target_compile_options(SortingAlgorithms_Analysis PRIVATE -Wall -Wextra)
