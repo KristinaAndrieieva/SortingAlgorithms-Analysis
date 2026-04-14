@@ -52,6 +52,12 @@ public:
         quickSortArray(arr,pivotStr,j + 1,right);
     };
 
-
+    static void quickSortList(SingleLinkedList<T>& list, string pivotStr,
+                              typename SingleLinkedList<T>::Node* left,
+                              typename SingleLinkedList<T>::Node* right) {
+        if (!left || !right || left == right || left == right->next) {
+            return;
+        }
+    }
 };
 #endif //QUICKSORT_H

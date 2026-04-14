@@ -4,7 +4,7 @@
 
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
-template <typename T>;
+
 
 #include <iostream>
 #include <chrono>
@@ -14,8 +14,8 @@ template <typename T>;
 #include "Parameters.h"
 #include "FileService.h"
 #include "Array.h"
-#include "SingleList.h"
-#include "DoubleList.h"
+#include "SingleLinkedList.h"
+#include "DoubleLinkedList.h"
 #include "QuickSort.h"
 #include "ShellSort.h"
 #include "BucketSort.h"
