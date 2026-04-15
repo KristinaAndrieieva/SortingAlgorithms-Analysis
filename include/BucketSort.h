@@ -12,6 +12,8 @@
 #include <iostream>
 #include <math.h>
 
+#include "DoubleLinkedList.h"
+
 using namespace std;
 template<typename  T>
 
@@ -89,7 +91,7 @@ class BucketSort {
 
         for (int i = 0; i < countBucket; i++) {
             if (buckets[i].head != nullptr) {
-                QuickSort<T>::quickSortList(buckets[i], "Centre", buckets[i].head, buckets[i].getTail());
+                QuickSort<T>::quickSortSingleList(buckets[i], "Centre", buckets[i].head, buckets[i].getTail());
 
                 if (slist.head == nullptr) {
                     slist.head = buckets[i].head;
@@ -107,6 +109,52 @@ class BucketSort {
         delete[] buckets;
     }
 
+
+    static void bucketSortDoubleList(DoubleLinkedList<T>& dlist) {
+        if (dlist.head == nullptr || dlist.head->next == nullptr) return;
+
+        T minValue = dlist.findMin();
+        T maxValue = dlist.findMax();
+        int size = dlist.getSize();
+
+        if (minValue == maxValue) return;
+
+        int bucketCount = sqrt(size);
+        DoubleLinkedList<T>* buckets = new DoubleLinkedList<T>[bucketCount];
+
+        typename DoubleLinkedList<T>::Node* curr = dlist.head;
+        while (curr != nullptr) {
+            int bucketIdx = (int)((double)(curr->data - minValue) / (maxValue - minValue) * (bucketCount - 1));
+
+            buckets[bucketIdx].pushBack(curr->data);
+            curr = curr->next;
+        }
+
+        dlist.head = nullptr;
+        dlist.tail = nullptr;
+
+
+        for (int i = 0; i < bucketCount; i++) {
+            if (buckets[i].head != nullptr) {
+                QuickSort<T>::quickSortDoubleList(buckets[i], "Centre", buckets[i].head, buckets[i].tail);
+
+                if (dlist.head == nullptr) {
+                    dlist.head = buckets[i].head;
+                    dlist.head->prev = nullptr;
+                } else {
+                    dlist.tail->next = buckets[i].head;
+                    buckets[i].head->prev = dlist.tail;
+                }
+                dlist.tail = buckets[i].tail;
+            }
+        }
+
+        for (int i = 0; i < bucketCount; i++) {
+            buckets[i].head = nullptr;
+            buckets[i].tail = nullptr;
+        }
+        delete[] buckets;
+    }
 
 };
 

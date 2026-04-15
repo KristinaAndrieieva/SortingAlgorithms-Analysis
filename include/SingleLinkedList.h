@@ -32,6 +32,7 @@ class SingleLinkedList {
         size = 0;
     }
 
+
     ~SingleLinkedList() {
         clear();
     }
@@ -48,6 +49,7 @@ class SingleLinkedList {
         size++;
     }
 
+
     void pushNode(Node* newNode) {
         if (!newNode) return;
         newNode->next = nullptr;
@@ -59,6 +61,7 @@ class SingleLinkedList {
         }
         size++;
     }
+
 
     void clear() {
         while (head != nullptr) {
@@ -80,6 +83,7 @@ class SingleLinkedList {
         return temp;
     }
 
+
     void swap(Node* a, Node* b) {
         if (a == nullptr || b == nullptr) return;
         T temp = a->data;
@@ -89,13 +93,16 @@ class SingleLinkedList {
 
     Node* getHead() { return head; }
 
+
     int getSize() const {
         return size;
     }
 
+
     void clearSize() {
         size = 0;
     }
+
 
     Node* getTail() {
         Node* temp = head;
@@ -103,6 +110,7 @@ class SingleLinkedList {
         while (temp->next != nullptr) temp = temp->next;
         return temp;
     }
+
 
     T findMax() {
         if (head == nullptr) return T();
