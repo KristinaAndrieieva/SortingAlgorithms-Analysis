@@ -39,6 +39,17 @@ public:
         capacity = newcapacity;
     }
 
+    void insertionSort(int gap) {
+        for (int i = gap; i < size; i++) {
+            T temp = data[i];
+            int j;
+            for (j = i; j >= gap && data[j - gap] > temp; j -= gap) {
+                data[j] = data[j - gap];
+            }
+            data[j] = temp;
+        }
+    }
+
     void reserve(int newCapacity) {
         if (data != nullptr) delete[] data;
         data = new T[newCapacity];

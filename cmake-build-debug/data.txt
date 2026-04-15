@@ -1,9 +1,9 @@
 7
-man
-umbrella
-active
-bus
-muster
-kwas
-bus
+1
+4
+51
+6
+76
+26
+11
 

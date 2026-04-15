@@ -91,8 +91,6 @@ class SingleLinkedList {
         b->data = temp;
     }
 
-    Node* getHead() { return head; }
-
 
     int getSize() const {
         return size;
@@ -126,7 +124,6 @@ class SingleLinkedList {
         return maxValue;
     }
 
-
     T findMin() {
         if (head == nullptr) return T();
         T minValue = head->data;
@@ -139,6 +136,32 @@ class SingleLinkedList {
             temp = temp->next;
         }
         return minValue;
+    }
+
+    void insertionSort(int gap) {
+        for (int i = gap; i < size; i++) {
+            for (int j = i; j >= gap; j -= gap) {
+                Node* nodeJ = getNodeAt(j);
+                Node* nodePrevGap = getNodeAt(j - gap);
+
+                if (nodePrevGap->data > nodeJ->data) {
+                    this->swap(nodePrevGap, nodeJ);
+                } else {
+                    break;
+                }
+            }
+        }
+    }
+
+
+    Node* getNodeAt(int index) {
+        if (index < 0 || index >= size) return nullptr;
+
+        Node* curr = head;
+        for (int i = 0; i < index && curr != nullptr; i++) {
+            curr = curr->next;
+        }
+        return curr;
     }
 };
 #endif //SINGLELIST_H

@@ -3,14 +3,14 @@
 #include <cstdlib>
 #include <string>
 
-// Twoje nagłówki
+
 #include "Array.h"
 #include "SingleLinkedList.h"
 #include "FileService.h"
 #include "QuickSort.h"
 #include "BucketSort.h"
 
-// Biblioteka prowadzącego
+
 #include "Parameters.h"
 #include "ShellSort.h"
 
@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
                     QuickSort<int>::quickSortArray(*array, pStr, 0, array->getSize() - 1);
                 }
                 else if (Parameters::algorithm == Parameters::Algorithms::bucket) {
-                    // BucketSort<int>::bucketSortArray(*array);
+                    BucketSort<int>::bucketSortArray(*array);
                 }else if (Parameters::algorithm == Parameters::Algorithms::shell) {
                     string gap = "Option 1";
                     if (Parameters::shellParameter == Parameters::ShellParameters::option2) {
@@ -84,8 +84,14 @@ int main(int argc, char** argv) {
                     }
                 }else if (Parameters::algorithm == Parameters::Algorithms::bucket) {
                     if (slist->head != nullptr) {
-                        // BucketSort<int>::bucketSortSingleList(*slist);
+                        BucketSort<int>::bucketSortSingleList(*slist);
                     }
+                }else if (Parameters::algorithm == Parameters::Algorithms::shell) {
+                    string gap = "Option 1";
+                    if (Parameters::shellParameter == Parameters::ShellParameters::option2) {
+                        gap = "Option 2";
+                    }
+                    ShellSort<int>::shellSortSingleList(*slist, gap);
                 }
 
                 SingleLinkedList<int>::Node* curr = slist->head;
@@ -114,8 +120,14 @@ int main(int argc, char** argv) {
                     }
                 }else if (Parameters::algorithm == Parameters::Algorithms::bucket) {
                     if (dlist->head != nullptr) {
-                        // BucketSort<int>::bucketSortDoubleList(*dlist);
+                        BucketSort<int>::bucketSortDoubleList(*dlist);
                     }
+                }else if (Parameters::algorithm == Parameters::Algorithms::shell) {
+                    string gap = "Option 1";
+                    if (Parameters::shellParameter == Parameters::ShellParameters::option2) {
+                        gap = "Option 2";
+                    }
+                    ShellSort<int>::shellSortDoubleList(*dlist, gap);
                 }
 
                 DoubleLinkedList<int>::Node* curr = dlist->head;
@@ -127,90 +139,6 @@ int main(int argc, char** argv) {
 
                 delete dlist;
             }
-        }else if (Parameters::dataType == Parameters::DataTypes::typeString) {
-            if (Parameters::structure == Parameters::Structures::array) {
-                Array<string>* array = FileService<string>::loadDataArray(Parameters::inputFile);
-
-                if (array == nullptr) return 1;
-
-                if (Parameters::algorithm == Parameters::Algorithms::quick) {
-                    string pStr = "Centre";
-                    if(Parameters::pivot == Parameters::Pivots::left) pStr = "Left";
-                    if(Parameters::pivot == Parameters::Pivots::random) pStr = "Random";
-
-                    QuickSort<string>::quickSortArray(*array, pStr, 0, array->getSize() - 1);
-                }
-                else if (Parameters::algorithm == Parameters::Algorithms::bucket) {
-                    // BucketSort<string>::bucketSortArray(*array);
-                }
-
-                for (int i = 0; i < array->getSize(); i++) {
-                    cout << (*array)[i] << " ";
-                }
-                cout << endl;
-
-                delete array;
-            }else if (Parameters::structure == Parameters::Structures::singleList) {
-                SingleLinkedList<string>* slist = FileService<string>::loadDataSingleLinkedlist(Parameters::inputFile);
-                if (slist == nullptr) return 1;
-
-                if (Parameters::algorithm == Parameters::Algorithms::quick) {
-
-                    string pStr = "Right";
-                    if (Parameters::pivot == Parameters::Pivots::left) pStr = "Left";
-                    else if (Parameters::pivot == Parameters::Pivots::middle) pStr = "Centre";
-                    else if (Parameters::pivot == Parameters::Pivots::random) pStr = "Random";
-
-
-                    if (slist->head != nullptr) {
-                        QuickSort<string>::quickSortSingleList(*slist, pStr, slist->head, slist->getTail());
-                    }
-                }else if (Parameters::algorithm == Parameters::Algorithms::bucket) {
-                    if (slist->head != nullptr) {
-                        // BucketSort<string>::bucketSortSingleList(*slist);
-                    }
-                }
-
-                SingleLinkedList<string>::Node* curr = slist->head;
-                while (curr != nullptr) {
-                    cout << curr->data << " ";
-                    curr = curr->next;
-                }
-                cout << endl;
-
-                delete slist;
-
-            }else if (Parameters::structure == Parameters::Structures::doubleList) {
-                DoubleLinkedList<string>* dlist = FileService<string>::loadDataDoubleLinkedlist(Parameters::inputFile);
-                if (dlist == nullptr) return 1;
-
-                if (Parameters::algorithm == Parameters::Algorithms::quick) {
-
-                    string pStr = "Right";
-                    if (Parameters::pivot == Parameters::Pivots::left) pStr = "Left";
-                    else if (Parameters::pivot == Parameters::Pivots::middle) pStr = "Centre";
-                    else if (Parameters::pivot == Parameters::Pivots::random) pStr = "Random";
-
-
-                    if (dlist->head != nullptr) {
-                        QuickSort<string>::quickSortDoubleList(*dlist, pStr, dlist->head, dlist->getTail());
-                    }
-                }else if (Parameters::algorithm == Parameters::Algorithms::bucket) {
-                    if (dlist->head != nullptr) {
-                        // BucketSort<string>::bucketSortDoubleList(*dlist);
-                    }
-                }
-
-                DoubleLinkedList<string>::Node* curr = dlist->head;
-                while (curr != nullptr) {
-                    cout << curr->data << " ";
-                    curr = curr->next;
-                }
-                cout << endl;
-
-                delete dlist;
-            }
-
         }
         else if (Parameters::runMode == Parameters::RunModes::benchmark) {
             cout << "Tryb benchmark nie jest jeszcze w pelni zaimplementowany." << endl;
@@ -218,4 +146,4 @@ int main(int argc, char** argv) {
 
         return 0;
     }
-}
+};

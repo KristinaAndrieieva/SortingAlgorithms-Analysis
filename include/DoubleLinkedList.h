@@ -120,5 +120,39 @@ public:
         }
         return minValue;
     }
+
+    Node* getNodeAt(int index) {
+        if (index < 0 || index >= size) {
+            return nullptr;
+        }
+        if (index < size / 2) {
+            Node* curr = head;
+            for (int i = 0; i < index; i++) {
+                curr = curr->next;
+            }
+            return curr;
+        } else {
+            Node* curr = tail;
+            for (int i = size - 1; i > index; i--) {
+                curr = curr->prev;
+            }
+            return curr;
+        }
+    }
+
+    void insertionSort(int gap) {
+        for (int i = gap; i < size; i++) {
+            for (int j = i; j >= gap; j -= gap) {
+                Node* nodeJ = getNodeAt(j);
+                Node* nodePrevGap = getNodeAt(j - gap);
+
+                if (nodePrevGap->data > nodeJ->data) {
+                    this->swap(nodePrevGap, nodeJ);
+                } else {
+                    break;
+                }
+            }
+        }
+    }
 };
 #endif //DOUBLELINKEDLIST_H
