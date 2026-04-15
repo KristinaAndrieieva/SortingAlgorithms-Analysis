@@ -59,8 +59,10 @@ public:
 
         if (!left || !right || left == right || left == right->next) return;
 
-
         typename SingleLinkedList<T>::Node* pivotNode = left;
+        int randomIndex;
+        int distance = 0;
+
 
         if (pivotStr == "Centre") {
             typename SingleLinkedList<T>::Node* fast = left;
@@ -70,10 +72,9 @@ public:
             }
         }
         else if (pivotStr == "Random") {
-            int distance = 0;
             typename SingleLinkedList<T>::Node* temp = left;
             while (temp != right) { distance++; temp = temp->next; }
-            int randomIndex = rand() % (distance + 1);
+            randomIndex = rand() % (distance + 1);
             pivotNode = left;
             for (int k = 0; k < randomIndex; k++) pivotNode = pivotNode->next;
         }

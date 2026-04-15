@@ -57,6 +57,7 @@ class SingleLinkedList {
             tail->next = newNode;
             tail = newNode;
         }
+        size++;
     }
 
     void clear() {
@@ -87,11 +88,49 @@ class SingleLinkedList {
     }
 
     Node* getHead() { return head; }
+
+    int getSize() const {
+        return size;
+    }
+
+    void clearSize() {
+        size = 0;
+    }
+
     Node* getTail() {
         Node* temp = head;
         if (!temp) return nullptr;
         while (temp->next != nullptr) temp = temp->next;
         return temp;
+    }
+
+    T findMax() {
+        if (head == nullptr) return T();
+        T maxValue = head->data;
+        Node* temp = head->next;
+
+        while (temp != nullptr) {
+            if (temp->data > maxValue) {
+                maxValue = temp->data;
+            }
+            temp = temp->next;
+        }
+        return maxValue;
+    }
+
+
+    T findMin() {
+        if (head == nullptr) return T();
+        T minValue = head->data;
+        Node* temp = head->next;
+
+        while (temp != nullptr) {
+            if ((temp->data) < minValue) {
+                minValue = temp->data;
+            }
+            temp = temp->next;
+        }
+        return minValue;
     }
 };
 #endif //SINGLELIST_H

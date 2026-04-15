@@ -75,6 +75,10 @@ int main(int argc, char** argv) {
                     if (slist->head != nullptr) {
                         QuickSort<int>::quickSortList(*slist, pStr, slist->head, slist->getTail());
                     }
+                }else if (Parameters::algorithm == Parameters::Algorithms::bucket) {
+                    if (slist->head != nullptr) {
+                        BucketSort<int>::bucketSortSingleList(*slist);
+                    }
                 }
 
                 SingleLinkedList<int>::Node* curr = slist->head;
