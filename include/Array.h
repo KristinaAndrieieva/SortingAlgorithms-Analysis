@@ -26,6 +26,11 @@ public:
         capacity = 0;
     };
 
+    Array(int s) {
+        size = s;
+        data = new T[s];
+    }
+
     void alocate(int newcapacity) {
         T* newData = new T[newcapacity];
 
@@ -71,6 +76,7 @@ public:
     T& operator[](int index) {
         return data[index];
     }
+
 
     void set (T x ,int index) {
         if (index <= size && index >= 0) {

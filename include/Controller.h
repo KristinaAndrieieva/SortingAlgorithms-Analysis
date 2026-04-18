@@ -19,10 +19,10 @@ class Controller {
 public:
     static void run() {
         switch (Parameters::dataType) {
-            case Parameters::DataTypes::typeInt:          runMode<int>(); break;
-            case Parameters::DataTypes::typeFloat:        runMode<float>(); break;
-            case Parameters::DataTypes::typeDouble:       runMode<double>(); break;
-            case Parameters::DataTypes::typeString:       runMode<std::string>(); break;
+            case Parameters::DataTypes::typeInt: runMode<int>(); break;
+            case Parameters::DataTypes::typeFloat: runMode<float>(); break;
+            case Parameters::DataTypes::typeDouble: runMode<double>(); break;
+            case Parameters::DataTypes::typeString: runMode<std::string>(); break;
             default: std::cerr << "Nie ma takiego typu danych w programie!" << std::endl;
         }
     }
@@ -66,9 +66,8 @@ private:
             }
 
             delete array;
-        }
+        }else if (Parameters::structure == Parameters::Structures::singleList) {
 
-        else if (Parameters::structure == Parameters::Structures::singleList) {
             SingleLinkedList<T>* slist = FileService<T>::loadDataSingleLinkedlist(Parameters::inputFile);
             if (slist == nullptr) return;
 
@@ -92,6 +91,7 @@ private:
             delete slist;
 
         }else if(Parameters::structure == Parameters::Structures::doubleList) {
+
             DoubleLinkedList<T>* dlist = FileService<T>::loadDataDoubleLinkedlist(Parameters::inputFile);
             if (dlist == nullptr) return;
 
@@ -153,7 +153,138 @@ private:
 
     template<typename  T>
     static void runBenchmark() {
-        std::cout << "Uruchamiam benchmark..." << std::endl;
+        int size = Parameters::structureSize;
+        int repeats = Parameters::iterations;
+
+        if (Parameters::resultsFile.empty()) {
+            std::cerr << "Blad: Nie podano pliku " << std::endl;
+            return;
+        }
+
+        if (size <= 0 || repeats <= 0) {
+            std::cerr << "Blad: Rozmiar i liczba iteracji musza byc wieksze od 0!" << std::endl;
+            return;
+        }
+
+
+        std::string algName = "Algorytm_" + std::to_string(static_cast<int>(Parameters::algorithm));
+        std::string structName = "Struktura_" + std::to_string(static_cast<int>(Parameters::structure));
+
+
+        std::string pivotVal = "NULL";
+        if (Parameters::algorithm == Parameters::Algorithms::quick) {
+            pivotVal = getPivotStr();
+        }
+
+        std::string shellVal = "NULL";
+        if (Parameters::algorithm == Parameters::Algorithms::shell) {
+            shellVal = getGapStr();
+        }
+
+        double totalTime = 0;
+        bool allSortedCorrectly = true;
+
+        for (int r = 0; r < repeats; r++) {
+            double currentElapsed = 0;
+            std::string currentStatus = "NIE";
+
+            if (Parameters::structure == Parameters::Structures::array) {
+                Array<T>* data = FileService<T>::generateRandomArray(size);
+
+                std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
+                SortOnArray<T>(*data);
+                std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
+
+                currentStatus = isSorted(*data);
+                currentElapsed = std::chrono::duration<double, std::milli>(end - start).count();
+                delete data;
+            }
+            else if (Parameters::structure == Parameters::Structures::singleList) {
+                SingleLinkedList<T>* data = FileService<T>::generateRandomSingleList(size);
+
+                std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
+                SortOnSingleList<T>(*data);
+                std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
+
+                currentStatus = isSorted(*data);
+                currentElapsed = std::chrono::duration<double, std::milli>(end - start).count();
+                delete data;
+            }
+            else if (Parameters::structure == Parameters::Structures::doubleList) {
+                DoubleLinkedList<T>* data = FileService<T>::generateRandomDoubleList(size);
+
+                std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
+                SortOnDoubleList<T>(*data);
+                std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
+
+                currentStatus = isSorted(*data);
+                currentElapsed = std::chrono::duration<double, std::milli>(end - start).count();
+                delete data;
+            }
+
+
+            if (currentStatus == "NIE") {
+                allSortedCorrectly = false;
+            }
+
+            totalTime += currentElapsed;
+
+            FileService<T>::saveBenchmarkLine(
+                Parameters::resultsFile,
+                (r + 1),
+                algName,
+                structName,
+                typeid(T).name(),
+                size,
+                pivotVal,
+                shellVal,
+                currentElapsed
+            );
+        }
+
+
+        double averageTime = totalTime / repeats;
+        FileService<T>::saveBenchmarkSummary(Parameters::resultsFile, averageTime);
+
+        std::cout << "Ilisc prob: " << repeats << std::endl;
+        std::cout << "Sredni czas: " << averageTime << " ms" << std::endl;
+
+        if (allSortedCorrectly) {
+            std::cout << "Posortowane: Tak" << std::endl;
+        } else {
+            std::cout << "Posortowane: Nie" << std::endl;
+        }
+
+        std::cout << "Wyniki zapisano w: " << Parameters::resultsFile << std::endl;
+    }
+
+
+    template<typename T>
+static std::string isSorted(Array<T>& arr) {
+        for (int i = 0; i < arr.getSize() - 1; i++) {
+            if (arr.getValue(i) > arr.getValue(i + 1)) return "NIE";
+        }
+        return "TAK";
+    }
+
+    template<typename T>
+    static std::string isSorted(SingleLinkedList<T>& slist) {
+        typename SingleLinkedList<T>::Node* curr = slist.head;
+        while (curr != nullptr && curr->next != nullptr) {
+            if (curr->data > curr->next->data) return "NIE";
+            curr = curr->next;
+        }
+        return "TAK";
+    }
+
+    template<typename T>
+    static std::string isSorted(DoubleLinkedList<T>& dlist) {
+        typename DoubleLinkedList<T>::Node* curr = dlist.head;
+        while (curr != nullptr && curr->next != nullptr) {
+            if (curr->data > curr->next->data) return "NIE";
+            curr = curr->next;
+        }
+        return "TAK";
     }
 };
 #endif //CONTROLLER_H
