@@ -8,6 +8,8 @@
 #include "DoubleLinkedList.h"
 #include "SingleLinkedList.h"
 #include "Array.h"
+#include "Tree.h"
+#include "Stack.h"
 #include <iostream>
 #include <fstream>
 #include <type_traits>
@@ -99,6 +101,41 @@ public:
         return tempdata;
     }
 
+    static Tree<T>* loadDataTree(const string& filename) {
+        ifstream file(filename);
+        Tree<T>* tempdata = new Tree<T>();
+        int size;
+        T value;
+
+        if (!file.is_open()) return nullptr;
+
+        if (file >> size) {
+            T* arr = new T[size];
+            for (int i = 0; i < size; i++) {
+                if (file >> value) arr[i] = value;
+            }
+            tempdata->build(arr, size);
+            delete[] arr;
+        }
+        file.close();
+        return tempdata;
+    }
+
+
+    static T* loadToRawArray(const string& filename, int& outSize) {
+        ifstream file(filename);
+        if (!file.is_open()) return nullptr;
+
+        if (!(file >> outSize)) return nullptr;
+
+        T* arr = new T[outSize];
+        for (int i = 0; i < outSize; i++) {
+            if (!(file >> arr[i])) break;
+        }
+        file.close();
+        return arr;
+    }
+
 
     static void saveToFile(const std::string& filename, Array<T>* data) {
         std::ofstream outFile(filename);
@@ -148,6 +185,35 @@ public:
         while (curr) {
             outFile << curr->data << "\n";
             curr = curr->next;
+        }
+        outFile.close();
+    }
+
+
+
+    static void saveToFile(const string& filename, Tree<T>* data, int size) {
+        ofstream outFile(filename);
+        if (!outFile.is_open()) return;
+
+        T* tempArray = new T[size];
+        data->sort(tempArray);
+
+        outFile << size << "\n";
+        for (int i = 0; i < size; i++) {
+            outFile << tempArray[i] << "\n";
+        }
+        delete[] tempArray;
+        outFile.close();
+    }
+
+
+    static void saveToFile(const string& filename, T* arr, int size) {
+        ofstream outFile(filename);
+        if (!outFile.is_open()) return;
+
+        outFile << size << "\n";
+        for (int i = 0; i < size; i++) {
+            outFile << arr[i] << "\n";
         }
         outFile.close();
     }
@@ -209,15 +275,37 @@ public:
         return list;
     }
 
+
+    static Tree<T>* generateRandomTree(int size) {
+        Tree<T>* tree = new Tree<T>();
+        T* tempArr = new T[size];
+        for (int i = 0; i < size; i++) {
+            tempArr[i] = generateRandomValue();
+        }
+
+        tree->build(tempArr, size);
+        delete[] tempArr;
+        return tree;
+    }
+
+
+    static Stack<T>* generateRandomStack(int size) {
+        Stack<T>* s = new Stack<T>();
+        for (int i = 0; i < size; i++) {
+            s->push(generateRandomValue());
+        }
+        return s;
+    }
+
     static T generateRandomValue() {
 
         if constexpr (is_same_v<T, int>) {
             return rand() % 100000;
-        }
-        else if constexpr (is_same_v<T, float> || is_same_v<T, double>) {
+        }else if constexpr (is_same_v<T, float> || is_same_v<T, double>) {
             return static_cast<T>(rand()) / (static_cast<T>(RAND_MAX / 1000.0));
-        }
-        else if constexpr (is_same_v<T, string>) {
+
+        }else if constexpr (is_same_v<T, string>) {
+
             string str = "";
             static const char alphanum[] = "abcdefghijklmnopqrstuvwxyz";
             for (int i = 0; i < 8; ++i) {

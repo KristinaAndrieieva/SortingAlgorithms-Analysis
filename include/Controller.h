@@ -92,6 +92,51 @@ private:
 
             FileService<T>::saveToFile(Parameters::outputFile, dlist);
             delete dlist;
+        }else if (Parameters::structure == Parameters::Structures::binaryTree) {
+
+            int size = 0;
+            T* rawData = FileService<T>::loadToRawArray(Parameters::inputFile, size);
+
+            if (rawData == nullptr) return;
+
+            Tree<T> bst;
+            std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
+
+            bst.build(rawData, size);
+            bst.sort(rawData);
+
+            std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double, std::milli> elapsed = end - start;
+
+            cout << "Czas wykonania : " << elapsed.count() << " ms" << endl;
+
+            FileService<T>::saveToFile(Parameters::outputFile, rawData, size);
+
+            delete[] rawData;
+
+        }else if (Parameters::structure == Parameters::Structures::stack) {
+
+            int size = 0;
+            T* rawData = FileService<T>::loadToRawArray(Parameters::inputFile, size);
+
+            if (rawData == nullptr) return;
+
+            Stack<T> stack(size);
+            for(int i = 0; i < size; i++) stack.push(rawData[i]);
+
+            std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
+
+            stack.drainToArray(rawData);
+            QuickSort<T>::quickSortRawArray(rawData, 0, size - 1);
+
+            std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double, std::milli> elapsed = end - start;
+
+            cout << "Czas wykonania (Stack): " << elapsed.count() << " ms" << endl;
+
+            FileService<T>::saveToFile(Parameters::outputFile, rawData, size);
+
+            delete[] rawData;
         }
     }
 
@@ -169,10 +214,12 @@ private:
             case Parameters::Structures::array:      structName = "Tablica"; break;
             case Parameters::Structures::singleList: structName = "Lista jednokierunkowa"; break;
             case Parameters::Structures::doubleList: structName = "Lista dwukierunkowa"; break;
+
             case Parameters::Structures::binaryTree:
                 structName = "Drzewo binarne";
                 algName = "Null";
             break;
+
             case Parameters::Structures::stack:
                 structName = "Stos";
                 algName = "Null";
@@ -239,7 +286,45 @@ private:
                 currentElapsed = chrono::duration<double, milli>(end - start).count();
                 delete data;
             }else if (Parameters::structure == Parameters::Structures::binaryTree) {
+                int n = size;
+                T* tempArr = new T[n];
 
+                for(int i = 0; i < n; i++) {
+                    tempArr[i] = FileService<T>::generateRandomValue();
+                }
+
+                Tree<T> tree;
+
+                chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
+
+                tree.build(tempArr, n);
+                tree.sort(tempArr);
+
+                chrono::high_resolution_clock::time_point end = chrono::high_resolution_clock::now();
+
+                currentStatus = isSorted(tempArr,size);
+
+                chrono::duration<double, std::milli> elapsed = end - start;
+                currentElapsed = elapsed.count();
+
+                delete[] tempArr;
+            }else if (Parameters::structure == Parameters::Structures::stack) {
+                Stack<T> stack(size);
+                T* tempArr = new T[size];
+                for(int i = 0; i < size; i++) stack.push(FileService<T>::generateRandomValue());
+
+                chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
+
+                stack.drainToArray(tempArr);
+                QuickSort<T>::quickSortRawArray(tempArr, 0, size - 1);
+
+                chrono::high_resolution_clock::time_point end =chrono::high_resolution_clock::now();
+
+                currentStatus = isSorted(tempArr, size);
+
+                chrono::duration<double, std::milli> elapsed = end - start;
+                currentElapsed = elapsed.count();
+                delete[] tempArr;
             }
 
 
@@ -303,6 +388,15 @@ private:
         while (curr != nullptr && curr->next != nullptr) {
             if (curr->data > curr->next->data) return "NIE";
             curr = curr->next;
+        }
+        return "TAK";
+    }
+
+    template<typename T>
+    static string isSorted(T* arr, int size) {
+        if (arr == nullptr || size <= 0) return "NIE";
+        for (int i = 0; i < size - 1; i++) {
+            if (arr[i] > arr[i + 1]) return "NIE";
         }
         return "TAK";
     }

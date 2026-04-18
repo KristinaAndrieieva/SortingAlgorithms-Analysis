@@ -151,7 +151,30 @@ public:
         if (actualPivot != right && actualPivot != nullptr) {
             quickSortDoubleList(dlist, pivotStr, actualPivot->next, right);
         }
+    }
 
+
+    static void quickSortRawArray(T* arr, int left, int right) {
+        if (left < right) {
+
+            int p = partitionRaw(arr, left, right);
+            quickSortRawArray(arr, left, p - 1);
+            quickSortRawArray(arr, p + 1, right);
+        }
+    }
+
+    static int partitionRaw(T* arr, int left, int right) {
+        T pivot = arr[right];
+        int i = left - 1;
+        for (int j = left; j < right; j++) {
+            if (arr[j] < pivot) {
+                i++;
+                swap(arr[i], arr[j]);
+            }
+        }
+        swap(arr[i + 1], arr[right]);
+        return i + 1;
     }
 };
+
 #endif //QUICKSORT_H

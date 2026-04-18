@@ -15,7 +15,7 @@ class Tree {
             right = nullptr;
         }
     };
-    Node* root = nullptr;
+    Node* root;
 
     void clear(Node* node) {
         if (!node) return;
@@ -26,9 +26,13 @@ class Tree {
 
 
     void insert(Node*& node, T val) {
-        if (!node) node = new Node(val);
-        else if (val < node->data) insert(node->left, val);
-        else insert(node->right, val);
+        if (!node) {
+            node = new Node(val);
+        } else if (val < node->data) {
+            insert(node->left, val);
+        } else {
+            insert(node->right, val);
+        }
     }
 
     void inOrder(Node* node, T* arr, int& index) {
@@ -39,7 +43,9 @@ class Tree {
     }
 
 public:
-    Tree() : root(nullptr) {}
+    Tree() {
+        root = nullptr;
+    }
 
     ~Tree() {
         clear(root);
@@ -51,9 +57,9 @@ public:
         }
     }
 
-    void sort(T* outArray) {
+    void sort(T* out) {
         int index = 0;
-        inOrder(root, outArray, index);
+        inOrder(root, out, index);
     }
 };
 #endif //TREE_H

@@ -11,7 +11,7 @@ using namespace std;
 template<typename  T>
 
 class SingleLinkedList {
-    public:
+public:
     struct Node {
         T data;
         Node *next;

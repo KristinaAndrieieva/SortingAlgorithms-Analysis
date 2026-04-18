@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <ctime>
-#include <cstdlib>
+
 
 using namespace std;
 template<typename  T>
@@ -29,6 +29,10 @@ public:
     Array(int s) {
         size = s;
         data = new T[s];
+    }
+
+    ~Array() {
+        delete[] data;
     }
 
     void alocate(int newcapacity) {
@@ -72,6 +76,7 @@ public:
         data[size] = x;
         size++;
     }
+
 
     T& operator[](int index) {
         return data[index];
@@ -128,14 +133,6 @@ public:
         *b = temp;
     }
 
-
-    ~Array() {
-        delete[] data;
-    }
-
-    T* getRawPointer() {
-        return this->data;
-    }
 
     int getSize (){
         return size;
