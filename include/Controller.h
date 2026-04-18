@@ -12,8 +12,10 @@
 #include "ShellSort.h"
 #include "BucketSort.h"
 #include "Tree.h"
+
 #include <chrono>
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 class Controller {
@@ -204,14 +206,14 @@ private:
         }
 
         switch(Parameters::algorithm) {
-            case Parameters::Algorithms::bucket:    algName = "BubbleSort";    break;
-            case Parameters::Algorithms::shell:     algName = "ShellSort";     break;
-            case Parameters::Algorithms::quick:     algName = "QuickSort";     break;
+            case Parameters::Algorithms::bucket:algName = "BubbleSort";    break;
+            case Parameters::Algorithms::shell:algName = "ShellSort";     break;
+            case Parameters::Algorithms::quick:algName = "QuickSort";     break;
             default: algName = "Nieznany";
         }
 
         switch(Parameters::structure) {
-            case Parameters::Structures::array:      structName = "Tablica"; break;
+            case Parameters::Structures::array: structName = "Tablica"; break;
             case Parameters::Structures::singleList: structName = "Lista jednokierunkowa"; break;
             case Parameters::Structures::doubleList: structName = "Lista dwukierunkowa"; break;
 
@@ -255,6 +257,7 @@ private:
 
             if (Parameters::structure == Parameters::Structures::array) {
                 Array<T>* data = FileService<T>::generateRandomArray(size);
+                prepareDistribution(data->getRawPointer(), size, Parameters::distribution);
 
                 chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
                 SortOnArray<T>(*data);
@@ -266,6 +269,9 @@ private:
             }
             else if (Parameters::structure == Parameters::Structures::singleList) {
                 SingleLinkedList<T>* data = FileService<T>::generateRandomSingleList(size);
+                T* temp = new T[size];
+
+                prepareDistribution(temp, size, Parameters::distribution);
 
                 chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
                 SortOnSingleList<T>(*data);
@@ -274,9 +280,14 @@ private:
                 currentStatus = isSorted(*data);
                 currentElapsed = chrono::duration<double, milli>(end - start).count();
                 delete data;
+                delete[] temp;
+
             }
             else if (Parameters::structure == Parameters::Structures::doubleList) {
                 DoubleLinkedList<T>* data = FileService<T>::generateRandomDoubleList(size);
+                T* temp = new T[size];
+
+                prepareDistribution(temp, size, Parameters::distribution);
 
                 chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
                 SortOnDoubleList<T>(*data);
@@ -285,6 +296,8 @@ private:
                 currentStatus = isSorted(*data);
                 currentElapsed = chrono::duration<double, milli>(end - start).count();
                 delete data;
+                delete[] temp;
+
             }else if (Parameters::structure == Parameters::Structures::binaryTree) {
                 int n = size;
                 T* tempArr = new T[n];
@@ -308,6 +321,7 @@ private:
                 currentElapsed = elapsed.count();
 
                 delete[] tempArr;
+
             }else if (Parameters::structure == Parameters::Structures::stack) {
                 Stack<T> stack(size);
                 T* tempArr = new T[size];
@@ -399,6 +413,23 @@ private:
             if (arr[i] > arr[i + 1]) return "NIE";
         }
         return "TAK";
+    }
+
+    template<typename T>
+    static void prepareDistribution(T* arr, int size, Parameters::Distribution dist) {
+        if (dist == Parameters::Distribution::random) {
+            return;
+        }
+        std::sort(arr, arr + size);
+
+        if (dist == Parameters::Distribution::descending) {
+            std::reverse(arr, arr + size);
+        }
+        else if (dist == Parameters::Distribution::ascending50Per) {
+            for (int i = size / 2; i < size; i++) {
+                arr[i] = FileService<T>::generateRandomValue();
+            }
+        }
     }
 };
 #endif //CONTROLLER_H

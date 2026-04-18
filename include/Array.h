@@ -145,5 +145,9 @@ public:
         return val;
     }
 
+    T* getRawPointer() {
+        return data;
+    }
+
 };
 #endif //ARRAY_H
