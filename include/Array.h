@@ -131,5 +131,12 @@ public:
         return size;
     }
 
+    double stringToDouble(std::string s) {
+        double val = 0;
+        if (s.length() > 0) val += (unsigned char)s[0] * 256;
+        if (s.length() > 1) val += (unsigned char)s[1];
+        return val;
+    }
+
 };
 #endif //ARRAY_H

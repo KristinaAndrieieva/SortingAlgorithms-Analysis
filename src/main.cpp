@@ -10,10 +10,8 @@
 #include "QuickSort.h"
 #include "BucketSort.h"
 #include "Controller.h"
-
-
 #include "Parameters.h"
-#include "ShellSort.h"
+
 
 using namespace std;
 

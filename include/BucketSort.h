@@ -27,36 +27,51 @@ class BucketSort {
             return;
         }
 
-        T maxValue = arr.findMax();
-        T minValue = arr.findMin();
+        T maxValue ,minValue;
         int countBucket = sqrt(size);
+        if (countBucket < 1) countBucket = 1;
         int index;
+        int newindex = 0;
+
+        if constexpr (!std::is_same_v<T, std::string>) {
+            minValue = arr.findMin();
+            maxValue = arr.findMax();
+            if (minValue == maxValue) return;
+        }
 
         Array <T>** buckets = new Array <T>*[countBucket];
 
         for (int i = 0; i < countBucket; i++) {
-            buckets[i] = new Array <T>();
+            buckets[i] = new Array<T>();
         }
 
         for (int i = 0; i < size; i++) {
             T value = arr.getValue(i);
-            index = (int)((double)(value - minValue) / (maxValue - minValue) * (countBucket - 1));
-            buckets[index] -> set(value);
-        }
 
-        int currentIdx = 0;
+            if constexpr (std::is_same_v<T, std::string>) {
+                unsigned char firstChar = (value.length() > 0) ? (unsigned char)value[0] : 0;
+                index = (int)((double)firstChar / 256.0 * countBucket);
+            } else {
+                index = (int)((double)(value - minValue) / (maxValue - minValue) * (countBucket - 1));
+            }
+
+            if(index < 0) index = 0;
+            if(index >= countBucket) index = countBucket - 1;
+
+            buckets[index]->set(value);
+        }
+        
         for (int i = 0; i < countBucket; i++) {
             if (buckets[i] -> getSize() > 1) {
                 QuickSort <T> ::quickSortArray(*buckets[i],"Centre",0,buckets[i] -> getSize() - 1);
             }
 
             for (int j = 0; j < buckets[i] -> getSize(); j++) {
-                arr.set(buckets[i]->getValue(j), currentIdx);
-                currentIdx++;
+                arr.set(buckets[i]->getValue(j), newindex);
+                newindex++;
             }
             delete buckets[i];
         }
-
         delete[] buckets;
     }
 
@@ -67,27 +82,38 @@ class BucketSort {
             return;
         }
 
-        T minValue = slist.findMin();
-        T maxValue = slist.findMax();
+        T minValue, maxValue ;
         int size = slist.getSize();
+        int bucketIdx;
+        
+        int countBucket = sqrt(size);
+        if (countBucket < 1) countBucket = 1;
 
-        if (maxValue == minValue) {
-            return;
+        if constexpr (!std::is_same_v<T, std::string>) {
+            minValue = slist.findMin();
+            maxValue = slist.findMax();
+            if (maxValue == minValue) return;
         }
 
-        int countBucket = sqrt(size);
         SingleLinkedList<T>* buckets = new SingleLinkedList<T>[countBucket];
 
-        typename SingleLinkedList<T>::Node* curr = slist.head;
-        while (curr != nullptr) {
-            int bucketIdx = (int)((double)(curr->data - minValue) / (maxValue - minValue) * (countBucket - 1));
+        typename SingleLinkedList<T>::Node* currentHead = slist.head;
+        while (currentHead != nullptr) {
+            if constexpr (std::is_same_v<T, std::string>) {
+                unsigned char firstChar = (currentHead->data.length() > 0) ? (unsigned char)currentHead->data[0] : 0;
+                bucketIdx = (int)((double)firstChar / 256.0 * countBucket);
+            } else {
+                bucketIdx = (int)((double)(currentHead->data - minValue) / (maxValue - minValue) * (countBucket - 1));
+            }
 
-            buckets[bucketIdx].pushBack(curr->data);
-            curr = curr->next;
+            if (bucketIdx < 0) bucketIdx = 0;
+            if (bucketIdx >= countBucket) bucketIdx = countBucket - 1;
+
+            buckets[bucketIdx].pushBack(currentHead->data);
+            currentHead = currentHead->next;
         }
 
-        slist.head = nullptr;
-        slist.tail = nullptr;
+        slist.clear();
 
         for (int i = 0; i < countBucket; i++) {
             if (buckets[i].head != nullptr) {
@@ -113,25 +139,39 @@ class BucketSort {
     static void bucketSortDoubleList(DoubleLinkedList<T>& dlist) {
         if (dlist.head == nullptr || dlist.head->next == nullptr) return;
 
-        T minValue = dlist.findMin();
-        T maxValue = dlist.findMax();
+        T minValue, maxValue;
         int size = dlist.getSize();
 
-        if (minValue == maxValue) return;
-
         int bucketCount = sqrt(size);
-        DoubleLinkedList<T>* buckets = new DoubleLinkedList<T>[bucketCount];
+        if (bucketCount < 1) bucketCount = 1;
 
-        typename DoubleLinkedList<T>::Node* curr = dlist.head;
-        while (curr != nullptr) {
-            int bucketIdx = (int)((double)(curr->data - minValue) / (maxValue - minValue) * (bucketCount - 1));
-
-            buckets[bucketIdx].pushBack(curr->data);
-            curr = curr->next;
+        if constexpr (!std::is_same_v<T, std::string>) {
+            minValue = dlist.findMin();
+            maxValue = dlist.findMax();
+            if (minValue == maxValue) return;
         }
 
-        dlist.head = nullptr;
-        dlist.tail = nullptr;
+        DoubleLinkedList<T>* buckets = new DoubleLinkedList<T>[bucketCount];
+
+        typename DoubleLinkedList<T>::Node* currentHead = dlist.head;
+        while (currentHead != nullptr) {
+            int bucketIdx;
+
+            if constexpr (std::is_same_v<T, std::string>) {
+                unsigned char firstChar = (currentHead->data.length() > 0) ? (unsigned char)currentHead->data[0] : 0;
+                bucketIdx = (int)((double)firstChar / 256.0 * bucketCount);
+            } else {
+                bucketIdx = (int)((double)(currentHead->data - minValue) / (maxValue - minValue) * (bucketCount - 1));
+            }
+
+            if (bucketIdx < 0) bucketIdx = 0;
+            if (bucketIdx >= bucketCount) bucketIdx = bucketCount - 1;
+
+            buckets[bucketIdx].pushBack(currentHead->data);
+            currentHead = currentHead->next;
+        }
+
+        dlist.clear();
 
 
         for (int i = 0; i < bucketCount; i++) {

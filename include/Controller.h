@@ -56,6 +56,15 @@ private:
             std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
             std::chrono::duration<double, std::milli> elapsed = end - start;
             std::cout << "Czas wykonania: " << elapsed.count() << " ms" << std::endl;
+
+            if (array->getSize() < 100) {
+                std::cout << "Dane po sortowaniu: ";
+                for(int i = 0; i < array->getSize(); i++) {
+                    std::cout << array->getValue(i) << " ";
+                }
+                std::cout << std::endl;
+            }
+
             delete array;
         }
 
@@ -70,6 +79,16 @@ private:
             std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
             std::chrono::duration<double, std::milli> elapsed = end - start;
             std::cout << "Czas wykonania: " << elapsed.count() << " ms" << std::endl;
+
+            if (slist->getSize() < 100) {
+                std::cout << "Dane po sortowaniu (SingleList): ";
+                auto* curr = slist->head;
+                while (curr != nullptr) {
+                    std::cout << curr->data << " ";
+                    curr = curr->next;
+                }
+                std::cout << std::endl;
+            }
             delete slist;
 
         }else if(Parameters::structure == Parameters::Structures::doubleList) {
