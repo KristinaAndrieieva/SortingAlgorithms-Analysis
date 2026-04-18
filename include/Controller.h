@@ -15,7 +15,6 @@
 #include <iostream>
 
 using namespace std;
-template<typename  T>
 class Controller {
 public:
     static void run() {
@@ -29,7 +28,7 @@ public:
     }
 
 private:
-    template <typename T>
+    template<typename  T>
     static void runMode() {
         if (Parameters::runMode == Parameters::RunModes::singleFile) {
             runSingleFile<T>();
@@ -39,7 +38,7 @@ private:
     }
 
 
-    template <typename T>
+    template<typename  T>
     static void runSingleFile() {
         if (Parameters::inputFile.empty()) {
             std::cerr << "Blad!" << std::endl;
@@ -89,7 +88,7 @@ private:
     }
 
 
-    template <typename T>
+    template<typename  T>
     static void SortOnArray(Array<T>& array) {
         if (Parameters::algorithm == Parameters::Algorithms::quick) {
             QuickSort<T>::quickSortArray(array, getPivotStr(), 0, array.getSize() - 1);
@@ -100,9 +99,10 @@ private:
         }
     }
 
+    template<typename  T>
     static void SortOnSingleList(SingleLinkedList<T>& slist) {
         if (Parameters::algorithm == Parameters::Algorithms::quick) {
-            QuickSort<T>::quickSortSingleList(slist, getPivotStr(), 0, slist.getSize() - 1);
+            QuickSort<T>::quickSortSingleList(slist, getPivotStr(),slist.head, slist.getTail());
         } else if (Parameters::algorithm == Parameters::Algorithms::shell) {
             ShellSort<T>::shellSortSingleList(slist, getGapStr());
         } else if (Parameters::algorithm == Parameters::Algorithms::bucket) {
@@ -110,10 +110,10 @@ private:
         }
     }
 
-
-    static void SortOnDoubleList(SingleLinkedList<T>& dlist) {
+    template<typename  T>
+    static void SortOnDoubleList(DoubleLinkedList<T>& dlist) {
         if (Parameters::algorithm == Parameters::Algorithms::quick) {
-            QuickSort<T>::quickSortDoubleList(dlist, getPivotStr(), 0, dlist.getSize() - 1);
+            QuickSort<T>::quickSortDoubleList(dlist, getPivotStr(), dlist.head, dlist.getTail());
         } else if (Parameters::algorithm == Parameters::Algorithms::shell) {
             ShellSort<T>::shellSortDoubleList(dlist, getGapStr());
         } else if (Parameters::algorithm == Parameters::Algorithms::bucket) {
@@ -132,7 +132,7 @@ private:
         return (Parameters::shellParameter == Parameters::ShellParameters::option2) ? "Option 2" : "Option 1";
     }
 
-    template <typename T>
+    template<typename  T>
     static void runBenchmark() {
         std::cout << "Uruchamiam benchmark..." << std::endl;
     }
