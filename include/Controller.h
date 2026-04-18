@@ -155,6 +155,9 @@ private:
     static void runBenchmark() {
         int size = Parameters::structureSize;
         int repeats = Parameters::iterations;
+        string algName;
+        string structName;
+        string typeName;
 
         if (Parameters::resultsFile.empty()) {
             std::cerr << "Blad: Nie podano pliku " << std::endl;
@@ -166,20 +169,37 @@ private:
             return;
         }
 
-
-        std::string algName = "Algorytm_" + std::to_string(static_cast<int>(Parameters::algorithm));
-        std::string structName = "Struktura_" + std::to_string(static_cast<int>(Parameters::structure));
-
-
-        std::string pivotVal = "NULL";
-        if (Parameters::algorithm == Parameters::Algorithms::quick) {
-            pivotVal = getPivotStr();
+        switch(Parameters::algorithm) {
+            case Parameters::Algorithms::bucket:    algName = "BubbleSort";    break;
+            case Parameters::Algorithms::shell:     algName = "ShellSort";     break;
+            case Parameters::Algorithms::quick:     algName = "QuickSort";     break;
+            default: algName = "Nieznany";
         }
 
-        std::string shellVal = "NULL";
-        if (Parameters::algorithm == Parameters::Algorithms::shell) {
-            shellVal = getGapStr();
+        switch(Parameters::structure) {
+            case Parameters::Structures::array:      structName = "Tablica"; break;
+            case Parameters::Structures::singleList: structName = "Lista jednokierunkowa"; break;
+            case Parameters::Structures::doubleList: structName = "Lista dwukierunkowa"; break;
+            default: structName = "Nieznana";
         }
+
+        if constexpr (is_same_v<T, int>) {
+            typeName = "int";
+        }else if constexpr (is_same_v<T, float>) {
+            typeName = "float";
+        }else if constexpr (is_same_v<T, double>) {
+            typeName = "double";
+        }else if constexpr (is_same_v<T, std::string>) {
+            typeName = "string";
+        }else {
+            typeName = "nieznany";
+        }
+
+        string pivotVal = "NULL";
+        if (Parameters::algorithm == Parameters::Algorithms::quick) pivotVal = getPivotStr();
+
+        string shellVal = "NULL";
+        if (Parameters::algorithm == Parameters::Algorithms::shell) shellVal = getGapStr();
 
         double totalTime = 0;
         bool allSortedCorrectly = true;
@@ -229,12 +249,12 @@ private:
 
             totalTime += currentElapsed;
 
-            FileService<T>::saveBenchmarkLine(
+            FileService<T>::saveBenchmark(
                 Parameters::resultsFile,
                 (r + 1),
                 algName,
                 structName,
-                typeid(T).name(),
+                typeName,
                 size,
                 pivotVal,
                 shellVal,
@@ -260,7 +280,7 @@ private:
 
 
     template<typename T>
-static std::string isSorted(Array<T>& arr) {
+    static std::string isSorted(Array<T>& arr) {
         for (int i = 0; i < arr.getSize() - 1; i++) {
             if (arr.getValue(i) > arr.getValue(i + 1)) return "NIE";
         }
