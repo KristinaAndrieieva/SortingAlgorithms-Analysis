@@ -137,8 +137,8 @@ public:
     }
 
 
-    static void saveToFile(const std::string& filename, Array<T>* data) {
-        std::ofstream outFile(filename);
+    static void saveToFile(const string& filename, Array<T>* data) {
+        ofstream outFile(filename);
         if (!outFile.is_open()) return;
         outFile << data->getSize() << "\n";
         for (int i = 0; i < data->getSize(); i++) {
@@ -148,8 +148,8 @@ public:
     }
 
 
-    static void saveToFile(const std::string& filename, SingleLinkedList<T>* data) {
-        std::ofstream outFile(filename);
+    static void saveToFile(const string& filename, SingleLinkedList<T>* data) {
+        ofstream outFile(filename);
         if (!outFile.is_open()) return;
 
         int count = 0;
@@ -169,8 +169,8 @@ public:
     }
 
 
-    static void saveToFile(const std::string& filename, DoubleLinkedList<T>* data) {
-        std::ofstream outFile(filename);
+    static void saveToFile(const string& filename, DoubleLinkedList<T>* data) {
+        ofstream outFile(filename);
         if (!outFile.is_open()) return;
 
         int count = 0;

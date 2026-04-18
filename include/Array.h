@@ -87,7 +87,7 @@ public:
         if (index <= size && index >= 0) {
             data[index] = x;
         } else {
-            std::cout << "index out of range" << std::endl;
+            cout << "index out of range" << endl;
         }
     }
 
@@ -138,7 +138,7 @@ public:
         return size;
     }
 
-    double stringToDouble(std::string s) {
+    double stringToDouble(string s) {
         double val = 0;
         if (s.length() > 0) val += (unsigned char)s[0] * 256;
         if (s.length() > 1) val += (unsigned char)s[1];

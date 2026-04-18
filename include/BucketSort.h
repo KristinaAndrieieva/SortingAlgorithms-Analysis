@@ -33,7 +33,7 @@ class BucketSort {
         int index;
         int newindex = 0;
 
-        if constexpr (!std::is_same_v<T, std::string>) {
+        if constexpr (!is_same_v<T, string>) {
             minValue = arr.findMin();
             maxValue = arr.findMax();
             if (minValue == maxValue) return;
@@ -48,7 +48,7 @@ class BucketSort {
         for (int i = 0; i < size; i++) {
             T value = arr.getValue(i);
 
-            if constexpr (std::is_same_v<T, std::string>) {
+            if constexpr (is_same_v<T, string>) {
                 unsigned char firstChar = (value.length() > 0) ? (unsigned char)value[0] : 0;
                 index = (int)((double)firstChar / 256.0 * countBucket);
             } else {
@@ -89,7 +89,7 @@ class BucketSort {
         int countBucket = sqrt(size);
         if (countBucket < 1) countBucket = 1;
 
-        if constexpr (!std::is_same_v<T, std::string>) {
+        if constexpr (!is_same_v<T, string>) {
             minValue = slist.findMin();
             maxValue = slist.findMax();
             if (maxValue == minValue) return;
@@ -99,7 +99,7 @@ class BucketSort {
 
         typename SingleLinkedList<T>::Node* currentHead = slist.head;
         while (currentHead != nullptr) {
-            if constexpr (std::is_same_v<T, std::string>) {
+            if constexpr (is_same_v<T, string>) {
                 unsigned char firstChar = (currentHead->data.length() > 0) ? (unsigned char)currentHead->data[0] : 0;
                 bucketIdx = (int)((double)firstChar / 256.0 * countBucket);
             } else {
@@ -145,7 +145,7 @@ class BucketSort {
         int bucketCount = sqrt(size);
         if (bucketCount < 1) bucketCount = 1;
 
-        if constexpr (!std::is_same_v<T, std::string>) {
+        if constexpr (!is_same_v<T, string>) {
             minValue = dlist.findMin();
             maxValue = dlist.findMax();
             if (minValue == maxValue) return;
@@ -157,7 +157,7 @@ class BucketSort {
         while (currentHead != nullptr) {
             int bucketIdx;
 
-            if constexpr (std::is_same_v<T, std::string>) {
+            if constexpr (is_same_v<T, string>) {
                 unsigned char firstChar = (currentHead->data.length() > 0) ? (unsigned char)currentHead->data[0] : 0;
                 bucketIdx = (int)((double)firstChar / 256.0 * bucketCount);
             } else {

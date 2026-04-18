@@ -102,13 +102,13 @@ private:
             if (rawData == nullptr) return;
 
             Tree<T> bst;
-            std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
+            chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
 
             bst.build(rawData, size);
             bst.sort(rawData);
 
-            std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
-            std::chrono::duration<double, std::milli> elapsed = end - start;
+            chrono::high_resolution_clock::time_point end = chrono::high_resolution_clock::now();
+            chrono::duration<double, milli> elapsed = end - start;
 
             cout << "Czas wykonania : " << elapsed.count() << " ms" << endl;
 
@@ -126,13 +126,13 @@ private:
             Stack<T> stack(size);
             for(int i = 0; i < size; i++) stack.push(rawData[i]);
 
-            std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
+            chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
 
             stack.drainToArray(rawData);
             QuickSort<T>::quickSortRawArray(rawData, 0, size - 1);
 
-            std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
-            std::chrono::duration<double, std::milli> elapsed = end - start;
+            chrono::high_resolution_clock::time_point end = chrono::high_resolution_clock::now();
+            chrono::duration<double, milli> elapsed = end - start;
 
             cout << "Czas wykonania (Stack): " << elapsed.count() << " ms" << endl;
 
@@ -317,7 +317,7 @@ private:
 
                 currentStatus = isSorted(tempArr,size);
 
-                chrono::duration<double, std::milli> elapsed = end - start;
+                chrono::duration<double, milli> elapsed = end - start;
                 currentElapsed = elapsed.count();
 
                 delete[] tempArr;
@@ -336,7 +336,7 @@ private:
 
                 currentStatus = isSorted(tempArr, size);
 
-                chrono::duration<double, std::milli> elapsed = end - start;
+                chrono::duration<double, milli> elapsed = end - start;
                 currentElapsed = elapsed.count();
                 delete[] tempArr;
             }
@@ -420,10 +420,10 @@ private:
         if (dist == Parameters::Distribution::random) {
             return;
         }
-        std::sort(arr, arr + size);
+        sort(arr, arr + size);
 
         if (dist == Parameters::Distribution::descending) {
-            std::reverse(arr, arr + size);
+            reverse(arr, arr + size);
         }
         else if (dist == Parameters::Distribution::ascending50Per) {
             for (int i = size / 2; i < size; i++) {

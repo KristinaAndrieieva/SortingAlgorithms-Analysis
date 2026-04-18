@@ -47,7 +47,7 @@ public:
 
 
     T top() const {
-        if (isEmpty()) throw std::runtime_error("Stos jest przepelniony");
+        if (isEmpty()) throw runtime_error("Stos jest przepelniony");
         return table[topIndex];
     }
 
