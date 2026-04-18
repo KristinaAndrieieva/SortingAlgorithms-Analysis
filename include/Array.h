@@ -133,6 +133,10 @@ public:
         delete[] data;
     }
 
+    T* getRawPointer() {
+        return this->data;
+    }
+
     int getSize (){
         return size;
     }

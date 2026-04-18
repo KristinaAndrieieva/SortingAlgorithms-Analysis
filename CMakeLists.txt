@@ -17,6 +17,7 @@ set(SOURCES
         lib/Parameters.h
         lib/Parameters.cpp
         include/Controller.h
+        include/Tree.h
 )
 add_executable(SortingAlgorithms_Analysis ${SOURCES})
 target_include_directories(SortingAlgorithms_Analysis PRIVATE include)

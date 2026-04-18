@@ -100,6 +100,59 @@ public:
     }
 
 
+    static void saveToFile(const std::string& filename, Array<T>* data) {
+        std::ofstream outFile(filename);
+        if (!outFile.is_open()) return;
+        outFile << data->getSize() << "\n";
+        for (int i = 0; i < data->getSize(); i++) {
+            outFile << data->getValue(i) << "\n";
+        }
+        outFile.close();
+    }
+
+
+    static void saveToFile(const std::string& filename, SingleLinkedList<T>* data) {
+        std::ofstream outFile(filename);
+        if (!outFile.is_open()) return;
+
+        int count = 0;
+        typename SingleLinkedList<T>::Node* temp = data->head;
+        while (temp) {
+            count++;
+            temp = temp->next;
+        }
+
+        outFile << count << "\n";
+        typename SingleLinkedList<T>::Node* curr = data->head;
+        while (curr) {
+            outFile << curr->data << "\n";
+            curr = curr->next;
+        }
+        outFile.close();
+    }
+
+
+    static void saveToFile(const std::string& filename, DoubleLinkedList<T>* data) {
+        std::ofstream outFile(filename);
+        if (!outFile.is_open()) return;
+
+        int count = 0;
+        typename DoubleLinkedList<T>::Node* temp = data->head;
+        while (temp) {
+            count++;
+            temp = temp->next;
+        }
+
+        outFile << count << "\n";
+        typename DoubleLinkedList<T>::Node* curr = data->head;
+        while (curr) {
+            outFile << curr->data << "\n";
+            curr = curr->next;
+        }
+        outFile.close();
+    }
+
+
     static void saveBenchmark(const string& fileName, int iteration, const string& alg,
                                   const string& structure, const string& type,
                                   int size, const string& pivot,
