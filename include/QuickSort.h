@@ -16,40 +16,43 @@ template<typename  T>
 class QuickSort {
 public:
 
-    static void quickSortArray(Array <T>& arr, string pivotStr,int left,int right) {
-        srand(time(NULL));
-        if (left >= right) {
-            return;
-        }
-        int pivotIndex;
+    static void quickSortArray(Array <T>& arr, string pivotStr,int left,int right){
+        while (left < right) {
+            int pivotIndex = right;
 
 
-        if (pivotStr == "Centre") {
-            pivotIndex = (left + right) / 2;
-        }else if (pivotStr == "Left") {
-            pivotIndex = left;
-        } else if (pivotStr == "Random") {
-            pivotIndex = left + rand() % (right - left + 1);
-        }else if (pivotStr == "Right") {
-            pivotIndex = right;
-        }
-
-        T pivotValue = arr[pivotIndex];
-
-        arr.swap(&arr[pivotIndex],&arr [right]);
-
-        int j = left;
-        for (int i = left; i < right; i++ ) {
-            if (arr[i] < pivotValue) {
-                arr.swap(&arr[i],&arr [j]);
-                j++;
+            if (pivotStr == "Centre") {
+                pivotIndex = (left + right) / 2;
+            } else if (pivotStr == "Left") {
+                pivotIndex = left;
+            } else if (pivotStr == "Random") {
+                pivotIndex = left + rand() % (right - left + 1);
+            } else if (pivotStr == "Right") {
+                pivotIndex = right;
             }
 
-        };
+            T pivotValue = arr[pivotIndex];
 
-        arr.swap(&arr[j],&arr [right]);
-        quickSortArray(arr,pivotStr,left,j - 1);
-        quickSortArray(arr,pivotStr,j + 1,right);
+            arr.swap(&arr[pivotIndex],&arr [right]);
+
+            int j = left;
+            for (int i = left; i < right; i++ ) {
+                if (arr[i] < pivotValue) {
+                    arr.swap(&arr[i],&arr [j]);
+                    j++;
+                }
+
+            }
+            arr.swap(&arr[j],&arr [right]);
+
+            if (j - left < right - j) {
+                quickSortArray(arr, pivotStr, left, j - 1);
+                left = j + 1;
+            } else {
+                quickSortArray(arr, pivotStr, j + 1, right);
+                right = j - 1;
+            }
+        }
     };
 
 
@@ -57,99 +60,90 @@ public:
                               typename SingleLinkedList<T>::Node* left,
                               typename SingleLinkedList<T>::Node* right) {
 
-        if (!left || !right || left == right || left == right->next) return;
+        while(!left || !right || left == right || left == right->next) {
+            typename SingleLinkedList<T>::Node* pivotNode = nullptr;
 
-        typename SingleLinkedList<T>::Node* pivotNode = left;
-        int randomIndex;
-        int distance = 0;
+            if (pivotStr == "Left") {
+                pivotNode = left;
+            }else if (pivotStr == "Centre") {
 
+                typename SingleLinkedList<T>::Node* fast = left;
+                pivotNode = left;
 
-        if (pivotStr == "Centre") {
-            typename SingleLinkedList<T>::Node* fast = left;
-            while (fast != right && fast->next != right) {
-                pivotNode = pivotNode->next;
-                fast = fast->next->next;
+                while (fast != right && fast->next != right) {
+                    pivotNode = pivotNode->next;
+                    fast = fast->next->next;
+                }
+            }else if (pivotStr == "Random") {
+                int dist = 0;
+                for (auto* t = left; t != right; t = t->next) dist++;
+                int rIdx = rand() % (dist + 1);
+                pivotNode = left;
+                for (int k = 0; k < rIdx; k++) pivotNode = pivotNode->next;
             }
-        }
-        else if (pivotStr == "Random") {
-            typename SingleLinkedList<T>::Node* temp = left;
-            while (temp != right) { distance++; temp = temp->next; }
-            randomIndex = rand() % (distance + 1);
-            pivotNode = left;
-            for (int k = 0; k < randomIndex; k++) pivotNode = pivotNode->next;
-        }
-        else if (pivotStr == "Right") {
-            pivotNode = right;
-        }
-
-
-        T pivotValue = pivotNode->data;
-        slist.swap(pivotNode, right);
-
-        typename SingleLinkedList<T>::Node* j = left;
-        for (typename SingleLinkedList<T>::Node* i = left; i != right; i = i->next) {
-            if ((i->data)< pivotValue) {
-                slist.swap(i, j);
-                j = j->next;
+            else {
+                pivotNode = right;
             }
-        }
-        slist.swap(j, right);
-        typename SingleLinkedList<T>::Node* actualPivot = j;
 
-        if (actualPivot != left) {
-            typename SingleLinkedList<T>::Node* prev = left;
-            while (prev->next != actualPivot) prev = prev->next;
-            quickSortSingleList(slist, pivotStr, left, prev);
+
+            T pivotValue = pivotNode->data;
+            slist.swap(pivotNode, right);
+
+            typename SingleLinkedList<T>::Node* j = left;
+            for (typename SingleLinkedList<T>::Node* i = left; i != right; i = i->next) {
+                if ((i->data)< pivotValue) {
+                    slist.swap(i, j);
+                    j = j->next;
+                }
+            }
+            slist.swap(j, right);
+            if (j != left) {
+                typename SingleLinkedList<T>::Node* prev = left;
+                while (prev->next != j) prev = prev->next;
+                quickSortSingleList(slist, pivotStr, left, prev);
+            }
+            left = j->next;
         }
-        quickSortSingleList(slist, pivotStr, actualPivot->next, right);
     }
 
     static void quickSortDoubleList (DoubleLinkedList<T>& dlist,string pivotStr,
                               typename DoubleLinkedList<T>::Node* left,
                               typename DoubleLinkedList<T>::Node* right) {
-        if (!left || !right || left == right || left == right->next) return;
+        while (left && right && left != right && left != right->next) {
+            typename DoubleLinkedList<T>::Node* pivotNode = nullptr;
 
+            if (pivotStr == "Left") pivotNode = left;
+            else if (pivotStr == "Centre") {
+                typename DoubleLinkedList<T>::Node* fast = left;
+                pivotNode = left;
+                while (fast != right && fast->next != right) {
+                    pivotNode = pivotNode->next;
+                    fast = fast->next->next;
+                }
+            } else if (pivotStr == "Random") {
+                int dist = 0;
+                for (auto* t = left; t != right; t = t->next) dist++;
+                pivotNode = left;
+                int rIdx = rand() % (dist + 1);
+                for (int k = 0; k < rIdx; k++) pivotNode = pivotNode->next;
+            } else pivotNode = right;
 
-        typename DoubleLinkedList<T>::Node* pivotNode = left;
+            T pVal = pivotNode->data;
+            dlist.swap(pivotNode, right);
 
-        if (pivotStr == "Centre") {
-            typename DoubleLinkedList<T>::Node* fast = left;
-            while (fast != right && fast->next != right) {
-                pivotNode = pivotNode->next;
-                fast = fast->next->next;
+            typename DoubleLinkedList<T>::Node* j = left;
+            for (typename DoubleLinkedList<T>::Node* i = left; i != right; i = i->next) {
+                if ((i->data) < pVal) {
+                    dlist.swap(i, j);
+                    j = j->next;
+                }
             }
-        }
-        else if (pivotStr == "Random") {
-            int distance = 0;
-            typename DoubleLinkedList<T>::Node* temp = left;
-            while (temp != right) { distance++; temp = temp->next; }
-            int randomIndex = rand() % (distance + 1);
-            pivotNode = left;
-            for (int k = 0; k < randomIndex; k++) pivotNode = pivotNode->next;
-        }
-        else if (pivotStr == "Right") {
-            pivotNode = right;
-        }
+            dlist.swap(j, right);
 
-        T pivotValue = pivotNode->data;
-        dlist.swap(pivotNode, right);
-
-        typename DoubleLinkedList<T>::Node* j = left;
-        for (typename DoubleLinkedList<T>::Node* i = left; i != right; i = i->next) {
-            if ((i->data) < pivotValue) {
-                dlist.swap(i, j);
-                j = j->next;
+            if (j != left) {
+                quickSortDoubleList(dlist, pivotStr, left, j->prev);
             }
-        }
-        dlist.swap(j, right);
-        typename DoubleLinkedList<T>::Node* actualPivot = j;
-
-
-        if (actualPivot != left && actualPivot != nullptr) {
-            quickSortDoubleList(dlist, pivotStr, left, actualPivot->prev);
-        }
-        if (actualPivot != right && actualPivot != nullptr) {
-            quickSortDoubleList(dlist, pivotStr, actualPivot->next, right);
+            left = j->next;
         }
     }
 

@@ -26,6 +26,7 @@ public:
             case Parameters::DataTypes::typeFloat: runMode<float>(); break;
             case Parameters::DataTypes::typeDouble: runMode<double>(); break;
             case Parameters::DataTypes::typeString: runMode<string>(); break;
+            case Parameters::DataTypes::tyleUnsignedInt:runMode<unsigned int>(); break;
             default: cerr << "Nie ma takiego typu danych w programie!" << endl;
         }
     }
@@ -206,7 +207,7 @@ private:
         }
 
         switch(Parameters::algorithm) {
-            case Parameters::Algorithms::bucket:algName = "BubbleSort";    break;
+            case Parameters::Algorithms::bucket:algName = "BucketSort";    break;
             case Parameters::Algorithms::shell:algName = "ShellSort";     break;
             case Parameters::Algorithms::quick:algName = "QuickSort";     break;
             default: algName = "Nieznany";
@@ -219,12 +220,12 @@ private:
 
             case Parameters::Structures::binaryTree:
                 structName = "Drzewo binarne";
-                algName = "Null";
+            algName = "Null";
             break;
 
             case Parameters::Structures::stack:
                 structName = "Stos";
-                algName = "Null";
+            algName = "Null";
             break;
             default: structName = "Nieznana";
         }
@@ -237,6 +238,8 @@ private:
             typeName = "double";
         }else if constexpr (is_same_v<T, string>) {
             typeName = "string";
+        }else if(is_same_v<T,unsigned int>) {
+            typeName = "unsigned int";
         }else {
             typeName = "nieznany";
         }

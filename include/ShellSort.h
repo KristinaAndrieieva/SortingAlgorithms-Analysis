@@ -7,7 +7,7 @@
 
 #include "Array.h"
 #include <string>
-#include <cmath>
+
 
 using namespace std;
 
@@ -28,12 +28,9 @@ class ShellSort {
         }
         else if (gapStr == "Option 2") {
             int h = 1;
-            while (h < size) {
+            while (h < size / 3) {
                 h = 3 * h + 1;
             }
-            h = h / 9;
-            if (h < 1) h = 1;
-
             while (h >= 1) {
                 arr.insertionSort(h);
                 h /= 3;
@@ -43,46 +40,45 @@ class ShellSort {
 
 
     static void shellSortSingleList(SingleLinkedList<T>& slist, string gapStr) {
-        int n = slist.getSize();
-        if (n <= 1) return;
+        int size = slist.getSize();
+        if (size <= 1) return;
 
         if (gapStr == "Option 1") {
-            for (int gap = n / 2; gap > 0; gap /= 2) {
+            for (int gap = size / 2; gap > 0; gap /= 2) {
                 slist.insertionSort(gap);
             }
         }
         else if (gapStr == "Option 2") {
             int hs = 1;
-            while (hs < n) {
+            while (hs < size/3) {
                 hs = 3 * hs + 1;
             }
-            int h = hs / 9;
-            if (h < 1) h = 1;
-
-            while (h >= 1) {
-                slist.insertionSort(h);
-                h /= 3;
+            while (hs >= 1) {
+                slist.insertionSort(hs);
+                hs /= 3;
             }
         }
     }
 
     static void shellSortDoubleList(DoubleLinkedList<T>& dlist, string gapStr) {
-        int n = dlist.getSize();
-        if (n <= 1) return;
+        int size = dlist.getSize();
+        if (size <= 1) return;
 
         if (gapStr == "Option 1") {
-            for (int gap = n / 2; gap > 0; gap /= 2) {
+            for (int gap = size / 2; gap > 0; gap /= 2) {
                 dlist.insertionSort(gap);
             }
         } else if (gapStr == "Option 2") {
-            int hs = 1;
-            while (hs < n) hs = 3 * hs + 1;
-            int h = hs / 9;
-            if (h < 1) h = 1;
-            while (h >= 1) {
-                dlist.insertionSort(h);
-                h /= 3;
+            int hd = 1;
+            while (hd < size/3) {
+                hd = 3 * hd + 1;
             }
+            while (hd >= 1) {
+                dlist.insertionSort(hd);
+                hd /= 3;
+            }
+
+
         }
     }
 };

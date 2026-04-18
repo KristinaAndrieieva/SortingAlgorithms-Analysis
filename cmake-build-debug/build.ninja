@@ -73,6 +73,7 @@ build CMakeFiles/SortingAlgorithms_Analysis.dir/lib/Parameters.cpp.obj: CXX_COMP
 
 build SortingAlgorithms_Analysis.exe: CXX_EXECUTABLE_LINKER__SortingAlgorithms_Analysis_Debug CMakeFiles/SortingAlgorithms_Analysis.dir/src/main.cpp.obj CMakeFiles/SortingAlgorithms_Analysis.dir/lib/Parameters.cpp.obj
   FLAGS = -g
+  LINK_FLAGS = -Wl,--stack,67108864
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SortingAlgorithms_Analysis.dir
   POST_BUILD = cd .

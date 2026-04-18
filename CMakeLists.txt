@@ -5,6 +5,10 @@ project(SortingAlgorithmsAnalysis)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+if(MINGW)
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--stack,67108864")
+endif()
+
 set(SOURCES
         src/main.cpp
         include/Array.h
