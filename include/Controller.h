@@ -271,10 +271,14 @@ private:
                 delete data;
             }
             else if (Parameters::structure == Parameters::Structures::singleList) {
-                SingleLinkedList<T>* data = FileService<T>::generateRandomSingleList(size);
+
                 T* temp = new T[size];
+                for(int i = 0; i < size; i++) temp[i] = FileService<T>::generateRandomValue();
 
                 prepareDistribution(temp, size, Parameters::distribution);
+
+                auto* data = new SingleLinkedList<T>();
+                for(int i = 0; i < size; i++) data->pushBack(temp[i]);
 
                 chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
                 SortOnSingleList<T>(*data);
@@ -287,10 +291,14 @@ private:
 
             }
             else if (Parameters::structure == Parameters::Structures::doubleList) {
-                DoubleLinkedList<T>* data = FileService<T>::generateRandomDoubleList(size);
+
                 T* temp = new T[size];
+                for(int i = 0; i < size; i++) temp[i] = FileService<T>::generateRandomValue();
 
                 prepareDistribution(temp, size, Parameters::distribution);
+
+                auto* data = new DoubleLinkedList<T>();
+                for(int i = 0; i < size; i++) data->pushBack(temp[i]);
 
                 chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
                 SortOnDoubleList<T>(*data);

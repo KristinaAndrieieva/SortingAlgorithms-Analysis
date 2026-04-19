@@ -57,54 +57,56 @@ public:
 
 
     static void quickSortSingleList(SingleLinkedList<T>& slist, string pivotStr,
-                              typename SingleLinkedList<T>::Node* left,
-                              typename SingleLinkedList<T>::Node* right) {
+                                typename SingleLinkedList<T>::Node* left,
+                                typename SingleLinkedList<T>::Node* right) {
 
-        while(!left || !right || left == right || left == right->next) {
-            typename SingleLinkedList<T>::Node* pivotNode = nullptr;
+    if (!left || !right || left == right || left == right->next) {
+        return;
+    }
 
-            if (pivotStr == "Left") {
-                pivotNode = left;
-            }else if (pivotStr == "Centre") {
+    typename SingleLinkedList<T>::Node* pivotNode = left;
+    if (pivotStr == "Centre") {
+        typename SingleLinkedList<T>::Node* fast = left;
+        typename SingleLinkedList<T>::Node* slow = left;
+        while (fast != right && fast->next != right) {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        pivotNode = slow;
+    } else if (pivotStr == "Random") {
+        int dist = 0;
+        for (auto* t = left; t != right; t = t->next) dist++;
+        int rIdx = rand() % (dist + 1);
+        pivotNode = left;
+        for (int k = 0; k < rIdx; k++) pivotNode = pivotNode->next;
+    } else if (pivotStr == "Right") {
+        pivotNode = right;
+    }
 
-                typename SingleLinkedList<T>::Node* fast = left;
-                pivotNode = left;
-
-                while (fast != right && fast->next != right) {
-                    pivotNode = pivotNode->next;
-                    fast = fast->next->next;
-                }
-            }else if (pivotStr == "Random") {
-                int dist = 0;
-                for (auto* t = left; t != right; t = t->next) dist++;
-                int rIdx = rand() % (dist + 1);
-                pivotNode = left;
-                for (int k = 0; k < rIdx; k++) pivotNode = pivotNode->next;
-            }
-            else {
-                pivotNode = right;
-            }
-
-
-            T pivotValue = pivotNode->data;
-            slist.swap(pivotNode, right);
-
-            typename SingleLinkedList<T>::Node* j = left;
-            for (typename SingleLinkedList<T>::Node* i = left; i != right; i = i->next) {
-                if ((i->data)< pivotValue) {
-                    slist.swap(i, j);
-                    j = j->next;
-                }
-            }
-            slist.swap(j, right);
-            if (j != left) {
-                typename SingleLinkedList<T>::Node* prev = left;
-                while (prev->next != j) prev = prev->next;
-                quickSortSingleList(slist, pivotStr, left, prev);
-            }
-            left = j->next;
+    T pivotValue = pivotNode->data;
+    slist.swap(pivotNode, right);
+    typename SingleLinkedList<T>::Node* j = left;
+    for (typename SingleLinkedList<T>::Node* i = left; i != right; i = i->next) {
+        if ((i->data) < pivotValue) {
+            slist.swap(i, j);
+            j = j->next;
         }
     }
+    slist.swap(j, right);
+    if (j != left) {
+        typename SingleLinkedList<T>::Node* prev = left;
+        while (prev != nullptr && prev->next != j) {
+            prev = prev->next;
+        }
+        if (prev != nullptr) {
+            quickSortSingleList(slist, pivotStr, left, prev);
+        }
+    }
+
+    if (j != nullptr && j->next != nullptr) {
+        quickSortSingleList(slist, pivotStr, j->next, right);
+    }
+}
 
     static void quickSortDoubleList (DoubleLinkedList<T>& dlist,string pivotStr,
                               typename DoubleLinkedList<T>::Node* left,
