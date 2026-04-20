@@ -15,6 +15,10 @@ template<typename T>
 class ShellSort {
 
     public:
+    /**
+         * ShellSort dla tablicy
+         * Wybiera sekwencji odstępu , dalej na podstawie tego wykonuje sortowanie dla tablicy
+         */
     static void shellSortArray(Array <T>& arr, string gapStr) {
         int size = arr.getSize();
         if (size <= 1) {
@@ -39,6 +43,10 @@ class ShellSort {
     }
 
 
+    /**
+         * ShellSort dla singlelist
+         * Wybiera sekwencji odstępu , dalej na podstawie tego wykonuje sortowanie dla singlelist
+         */
     static void shellSortSingleList(SingleLinkedList<T>& slist, string gapStr) {
         int size = slist.getSize();
         if (size <= 1) return;
@@ -60,6 +68,10 @@ class ShellSort {
         }
     }
 
+    /**
+         * ShellSort dla doublelist
+         * Wybiera sekwencji odstępu , dalej na podstawie tego wykonuje sortowanie dla doublelist
+         */
     static void shellSortDoubleList(DoubleLinkedList<T>& dlist, string gapStr) {
         int size = dlist.getSize();
         if (size <= 1) return;

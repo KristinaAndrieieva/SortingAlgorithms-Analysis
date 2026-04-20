@@ -49,7 +49,7 @@ Nr_Proby;Algorytm;Struktura;Typ_Danych;Rozmiar;Pivot;Shell_Option;Czas_ms
 48;QuickSort;Tablica;int;25000;Random;NULL;4,0588
 49;QuickSort;Tablica;int;25000;Random;NULL;3,3967
 50;QuickSort;Tablica;int;25000;Random;NULL;3,3423
-
+;;;;;;;
 SREDNIA;;;;; ; ;3,63136
 1;QuickSort;Tablica;int;25000;Left;NULL;671,44
 2;QuickSort;Tablica;int;25000;Left;NULL;637,337
@@ -101,7 +101,7 @@ SREDNIA;;;;; ; ;3,63136
 48;QuickSort;Tablica;int;25000;Left;NULL;675,513
 49;QuickSort;Tablica;int;25000;Left;NULL;684,165
 50;QuickSort;Tablica;int;25000;Left;NULL;670,391
-
+;;;;;;;
 SREDNIA;;;;; ; ;691,848
 1;QuickSort;Tablica;int;25000;Right;NULL;1513,62
 2;QuickSort;Tablica;int;25000;Right;NULL;1473,52
@@ -153,7 +153,7 @@ SREDNIA;;;;; ; ;691,848
 48;QuickSort;Tablica;int;25000;Right;NULL;1990,7
 49;QuickSort;Tablica;int;25000;Right;NULL;2239,25
 50;QuickSort;Tablica;int;25000;Right;NULL;2138,7
-
+;;;;;;;
 SREDNIA;;;;; ; ;2268,31
 1;QuickSort;Tablica;int;25000;Centre;NULL;2,6581
 2;QuickSort;Tablica;int;25000;Centre;NULL;2,3736
@@ -205,5 +205,5 @@ SREDNIA;;;;; ; ;2268,31
 48;QuickSort;Tablica;int;25000;Centre;NULL;2,3396
 49;QuickSort;Tablica;int;25000;Centre;NULL;2,1709
 50;QuickSort;Tablica;int;25000;Centre;NULL;2,1493
-
+;;;;;;;
 SREDNIA;;;;; ; ;2,34958

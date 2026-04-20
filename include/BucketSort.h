@@ -20,7 +20,11 @@ template<typename  T>
 class BucketSort {
 
     public:
-
+    /**
+         * implementacja sortowania kubełkowego dla tablicy dynamicznej Array.
+         * stworzamy kubełki za wzorem, dodajemy elementy do kubełków , a następnie sortujemy każdy kubełek
+         * z osobna za pomocą QuickSort.
+         */
     static void bucketSortArray(Array <T>& arr) {
         int size = arr.getSize();
         if (size <= 1) {
@@ -39,19 +43,23 @@ class BucketSort {
             if (minValue == maxValue) return;
         }
 
+        // Alokacja tablicy wskaźników
         Array <T>** buckets = new Array <T>*[countBucket];
 
         for (int i = 0; i < countBucket; i++) {
             buckets[i] = new Array<T>();
         }
 
+        //// Distribution:
         for (int i = 0; i < size; i++) {
             T value = arr.getValue(i);
 
             if constexpr (is_same_v<T, string>) {
+                // Wzór dla stringów
                 unsigned char firstChar = (value.length() > 0) ? (unsigned char)value[0] : 0;
                 index = (int)((double)firstChar / 256.0 * countBucket);
             } else {
+                //wzór dla liczb
                 index = (int)((double)(value - minValue) / (maxValue - minValue) * (countBucket - 1));
             }
 
@@ -60,7 +68,8 @@ class BucketSort {
 
             buckets[index]->set(value);
         }
-        
+
+        //sortowanie kubełków,po tym usunuęcie
         for (int i = 0; i < countBucket; i++) {
             if (buckets[i] -> getSize() > 1) {
                 QuickSort <T> ::quickSortArray(*buckets[i],"Centre",0,buckets[i] -> getSize() - 1);
@@ -76,7 +85,11 @@ class BucketSort {
     }
 
 
-
+    /**
+        * implementacja sortowania kubełkowego dla Listy jednokierunkowej SingleList.
+        * stworzamy kubełki za wzorem, dodajemy elementy do kubełków , a następnie sortujemy każdy kubełek
+        * z osobna za pomocą QuickSort.
+        */
     static void bucketSortSingleList(SingleLinkedList<T>& slist) {
         if (slist.head == nullptr || slist.head->next == nullptr) {
             return;
@@ -95,8 +108,11 @@ class BucketSort {
             if (maxValue == minValue) return;
         }
 
+        // każdy kubełek jest teraz niezależnym obiektem
         SingleLinkedList<T>* buckets = new SingleLinkedList<T>[countBucket];
 
+
+        // kopiujemy dane do kubełków.
         typename SingleLinkedList<T>::Node* currentHead = slist.head;
         while (currentHead != nullptr) {
             if constexpr (is_same_v<T, string>) {
@@ -115,6 +131,7 @@ class BucketSort {
 
         slist.clear();
 
+        //sortowanie kubełków,po tym usunuęcie
         for (int i = 0; i < countBucket; i++) {
             if (buckets[i].head != nullptr) {
                 QuickSort<T>::quickSortSingleList(buckets[i], "Centre", buckets[i].head, buckets[i].getTail());
@@ -135,7 +152,11 @@ class BucketSort {
         delete[] buckets;
     }
 
-
+    /**
+           * implementacja sortowania kubełkowego dla Listy dwukierunkowej DoubleList..
+           * stworzamy kubełki za wzorem, dodajemy elementy do kubełków , a następnie sortujemy każdy kubełek
+           * z osobna za pomocą QuickSort.
+             */
     static void bucketSortDoubleList(DoubleLinkedList<T>& dlist) {
         if (dlist.head == nullptr || dlist.head->next == nullptr) return;
 
@@ -151,8 +172,11 @@ class BucketSort {
             if (minValue == maxValue) return;
         }
 
+        // każdy kubełek jest teraz niezależnym obiektem
         DoubleLinkedList<T>* buckets = new DoubleLinkedList<T>[bucketCount];
 
+
+        // kopiujemy dane do kubełków.
         typename DoubleLinkedList<T>::Node* currentHead = dlist.head;
         while (currentHead != nullptr) {
             int bucketIdx;
@@ -174,6 +198,7 @@ class BucketSort {
         dlist.clear();
 
 
+        //sortowanie kubełków,po tym usunuęcie
         for (int i = 0; i < bucketCount; i++) {
             if (buckets[i].head != nullptr) {
                 QuickSort<T>::quickSortDoubleList(buckets[i], "Centre", buckets[i].head, buckets[i].tail);

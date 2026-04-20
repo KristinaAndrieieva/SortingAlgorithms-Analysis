@@ -4,7 +4,7 @@ $glowny_folder = "Wyniki_Koncowe"
 $n_it = "50"
 $p_opt = "3"
 $e_opt = "1"
-$rozmiar_z_A = "25000"
+$rozmiar = "25000"
 
 if (!(Test-Path $glowny_folder)) { New-Item -ItemType Directory $glowny_folder }
 
@@ -38,17 +38,17 @@ foreach ($a in $algorytmy) {
 }
 
 
-Write-Host "`n URUCHAMIAM BADANIE B (Rozkład danych)" -ForegroundColor Yellow
+Write-Host "`n BADANIE B (Rozkład danych)" -ForegroundColor Yellow
 foreach ($s in 0..2) {
     foreach ($d in 0..3) {
-        Uruchom-Benchmark "Badanie_B" "wyniki_B.csv" "-a 5 -s $s -p $p_opt -l $rozmiar_z_A -d $d -t 0"
+        Uruchom-Benchmark "Badanie_B" "wyniki_B.csv" "-a 5 -s $s -p $p_opt -l $rozmiar -d $d -t 0"
     }
 }
 
 
-Write-Host "`nURUCHAMIAM BADANIE C (Typy danych)" -ForegroundColor Yellow
+Write-Host "`nBADANIE C (Typy danych)" -ForegroundColor Yellow
 foreach ($t in 0, 1, 4, 5) {
-    Uruchom-Benchmark "Badanie_C" "wyniki_C.csv" "-a 5 -s 0 -p $p_opt -l $rozmiar_z_A -d 0 -t $t"
+    Uruchom-Benchmark "Badanie_C" "wyniki_C.csv" "-a 5 -s 0 -p $p_opt -l $rozmiar -d 0 -t $t"
 }
 
 Write-Host "`BADANIE OMEGA (Struktury)" -ForegroundColor Magenta
@@ -58,4 +58,3 @@ foreach ($s in $struktury_omega) {
     Uruchom-Benchmark "Badanie_Omega" "wyniki_Omega.csv" "-a 5 -s $s -p $p_opt -l 10000 -d 0 -t 0"
 }
 
-Write-Host "`n--- WSZYSTKIE TESTY ZAKOŃCZONE ---" -ForegroundColor Green

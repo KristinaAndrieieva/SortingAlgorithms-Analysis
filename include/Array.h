@@ -20,6 +20,7 @@ private:
     int capacity;
 
 public:
+    // Konstruktor domyślny
     Array() {
         data = nullptr;
         size = 0;
@@ -35,6 +36,8 @@ public:
         delete[] data;
     }
 
+
+    // Metoda dla zmiany rozmiaru tablicy
     void alocate(int newcapacity) {
         T* newData = new T[newcapacity];
 
@@ -48,6 +51,8 @@ public:
         capacity = newcapacity;
     }
 
+
+    // Sortowanie przez wstawianie, została wykorzystana w shellsort
     void insertionSort(int gap) {
         for (int i = gap; i < size; i++) {
             T temp = data[i];
@@ -59,6 +64,7 @@ public:
         }
     }
 
+    // przygotoawnie nowej panięci
     void reserve(int newCapacity) {
         if (data != nullptr) delete[] data;
         data = new T[newCapacity];
@@ -67,6 +73,7 @@ public:
     }
 
 
+    //wstawiania elementu do tablicy
     void set (T x) {
         if (size == capacity) {
             int newcapacity = (capacity == 0)? 1 : capacity + 1;
@@ -83,6 +90,7 @@ public:
     }
 
 
+    // wstawianie element do tablicy pod konkretnym indeksem
     void set (T x ,int index) {
         if (index <= size && index >= 0) {
             data[index] = x;
@@ -92,7 +100,7 @@ public:
     }
 
 
-
+    // szuka największą liczbe w tablicę
     T findMax () {
         if (size == 0) {
             return T();
@@ -108,6 +116,7 @@ public:
     }
 
 
+    // szuka najmniejszą liczbe w tablicę
     T findMin () {
         if (size == 0) {
             return T();
@@ -122,11 +131,12 @@ public:
         return min;
     }
 
+
     T getValue (int index) {
         return data[index];
     }
 
-
+    // zamienia liczby miejscami
     void swap (T* a,T* b) {
         T temp = *a;
         *a = *b;
@@ -138,6 +148,7 @@ public:
         return size;
     }
 
+    // konwersja string na double dla porownanie w algorytmach sortowania
     double stringToDouble(string s) {
         double val = 0;
         if (s.length() > 0) val += (unsigned char)s[0] * 256;

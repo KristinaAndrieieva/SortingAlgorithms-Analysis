@@ -17,6 +17,7 @@ class Tree {
     };
     Node* root;
 
+    //usuwa całe drzewo z pamieci
     void clear(Node* node) {
         if (!node) return;
         clear(node->left);
@@ -25,6 +26,7 @@ class Tree {
     }
 
 
+    //wstawia wartosc do drzewa
     void insert(Node*& node, T val) {
         if (!node) {
             node = new Node(val);
@@ -35,6 +37,7 @@ class Tree {
         }
     }
 
+    //ta kolejnosc odwiedza elementyrosnąco
     void inOrder(Node* node, T* arr, int& index) {
         if (!node) return;
         inOrder(node->left, arr, index);
@@ -51,12 +54,14 @@ public:
         clear(root);
     }
 
+    //buduje drzewo na podstawie tablicy
     void build(T* arr, int size) {
         for(int i = 0; i < size; i++) {
             insert(root, arr[i]);
         }
     }
 
+    //sortuje dane poprzez wypisywanie je do tablicy
     void sort(T* out) {
         int index = 0;
         inOrder(root, out, index);

@@ -15,7 +15,10 @@ template<typename  T>
 
 class QuickSort {
 public:
-
+    /**
+         * QuickSort dla tablicy
+         * Wybiera pivot, dalej na podstawie tego wykonuje sortowanie dla tablicy
+         */
     static void quickSortArray(Array <T>& arr, string pivotStr,int left,int right){
         while (left < right) {
             int pivotIndex = right;
@@ -56,6 +59,10 @@ public:
     };
 
 
+    /**
+         * QuickSort dla singlelist
+         * Wybiera pivot, dalej na podstawie tego wykonuje sortowanie dla singlelist
+         */
     static void quickSortSingleList(SingleLinkedList<T>& slist, string pivotStr,
                                 typename SingleLinkedList<T>::Node* left,
                                 typename SingleLinkedList<T>::Node* right) {
@@ -66,13 +73,13 @@ public:
 
     typename SingleLinkedList<T>::Node* pivotNode = left;
     if (pivotStr == "Centre") {
-        typename SingleLinkedList<T>::Node* fast = left;
-        typename SingleLinkedList<T>::Node* slow = left;
-        while (fast != right && fast->next != right) {
-            slow = slow->next;
-            fast = fast->next->next;
+        typename SingleLinkedList<T>::Node* first = left;
+        typename SingleLinkedList<T>::Node* last = left;
+        while (first != right && first->next != right) {
+            last = last->next;
+            first = first->next->next;
         }
-        pivotNode = slow;
+        pivotNode = last;
     } else if (pivotStr == "Random") {
         int dist = 0;
         for (auto* t = left; t != right; t = t->next) dist++;
@@ -108,6 +115,10 @@ public:
     }
 }
 
+    /**
+         * QuickSort dla tablicy
+         * Wybiera pivot, dalej na podstawie tego wykonuje sortowanie dla doublelist
+         */
     static void quickSortDoubleList (DoubleLinkedList<T>& dlist,string pivotStr,
                               typename DoubleLinkedList<T>::Node* left,
                               typename DoubleLinkedList<T>::Node* right) {
@@ -149,7 +160,7 @@ public:
         }
     }
 
-
+    //implementacja dla surowej tablicy
     static void quickSortRawArray(T* arr, int left, int right) {
         if (left < right) {
 
@@ -159,6 +170,7 @@ public:
         }
     }
 
+    //dzieli tablice na dwie części
     static int partitionRaw(T* arr, int left, int right) {
         T pivot = arr[right];
         int i = left - 1;

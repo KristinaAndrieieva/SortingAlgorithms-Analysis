@@ -20,6 +20,7 @@
 using namespace std;
 class Controller {
 public:
+    // główny punkt wejścia. Wybiera szablon funkcji na podstawie parametru dataType
     static void run() {
         switch (Parameters::dataType) {
             case Parameters::DataTypes::typeInt: runMode<int>(); break;
@@ -33,6 +34,7 @@ public:
 
 private:
     template<typename  T>
+    // wybiera tryb pracy: pojedyncze sortowanie lub seria testów
     static void runMode() {
         if (Parameters::runMode == Parameters::RunModes::singleFile) {
             runSingleFile<T>();
@@ -42,6 +44,7 @@ private:
     }
 
 
+    //wczytywanie, sortowanie i zapisywanie danych dla jednej struktury
     template<typename  T>
     static void runSingleFile() {
         if (Parameters::inputFile.empty() || Parameters::outputFile.empty()) {
@@ -49,6 +52,8 @@ private:
             return;
         }
 
+
+        //ładuje dane, mierzy czas sortowania i zapisuje wynik dla tablicy
         if (Parameters::structure == Parameters::Structures::array) {
             Array<T>* array = FileService<T>::loadDataArray(Parameters::inputFile);
             if (array == nullptr) return;
@@ -64,7 +69,9 @@ private:
             FileService<T>::saveToFile(Parameters::outputFile, array);
             delete array;
 
-        }else if (Parameters::structure == Parameters::Structures::singleList) {
+
+        }//ładuje dane, mierzy czas sortowania i zapisuje wynik dla singlelist
+        else if (Parameters::structure == Parameters::Structures::singleList) {
 
             SingleLinkedList<T>* slist = FileService<T>::loadDataSingleLinkedlist(Parameters::inputFile);
             if (slist == nullptr) return;
@@ -80,7 +87,9 @@ private:
             FileService<T>::saveToFile(Parameters::outputFile, slist);
             delete slist;
 
-        }else if(Parameters::structure == Parameters::Structures::doubleList) {
+
+        }//ładuje dane, mierzy czas sortowania i zapisuje wynik dla doublelist
+        else if(Parameters::structure == Parameters::Structures::doubleList) {
 
             DoubleLinkedList<T>* dlist = FileService<T>::loadDataDoubleLinkedlist(Parameters::inputFile);
             if (dlist == nullptr) return;
@@ -95,7 +104,9 @@ private:
 
             FileService<T>::saveToFile(Parameters::outputFile, dlist);
             delete dlist;
-        }else if (Parameters::structure == Parameters::Structures::binaryTree) {
+
+        }//ładuje dane, mierzy czas sortowania i zapisuje wynik dla drzewa
+        else if (Parameters::structure == Parameters::Structures::binaryTree) {
 
             int size = 0;
             T* rawData = FileService<T>::loadToRawArray(Parameters::inputFile, size);
@@ -117,7 +128,8 @@ private:
 
             delete[] rawData;
 
-        }else if (Parameters::structure == Parameters::Structures::stack) {
+        }//ładuje dane, mierzy czas sortowania i zapisuje wynik dla stosu
+        else if (Parameters::structure == Parameters::Structures::stack) {
 
             int size = 0;
             T* rawData = FileService<T>::loadToRawArray(Parameters::inputFile, size);
@@ -144,6 +156,7 @@ private:
     }
 
 
+    // metoda wybiera algorytm sortowania dla tablicy
     template<typename  T>
     static void SortOnArray(Array<T>& array) {
         if (Parameters::algorithm == Parameters::Algorithms::quick) {
@@ -155,6 +168,7 @@ private:
         }
     }
 
+    // metoda wybiera algorytm sortowania dla singlelist
     template<typename  T>
     static void SortOnSingleList(SingleLinkedList<T>& slist) {
         if (Parameters::algorithm == Parameters::Algorithms::quick) {
@@ -166,6 +180,7 @@ private:
         }
     }
 
+    // metoda wybiera algorytm sortowania dla doublelist
     template<typename  T>
     static void SortOnDoubleList(DoubleLinkedList<T>& dlist) {
         if (Parameters::algorithm == Parameters::Algorithms::quick) {
@@ -176,6 +191,7 @@ private:
             BucketSort<T>::bucketSortDoubleList(dlist);
         }
     }
+
 
     static string getPivotStr() {
         if (Parameters::pivot == Parameters::Pivots::left) return "Left";
@@ -188,6 +204,8 @@ private:
         return (Parameters::shellParameter == Parameters::ShellParameters::option2) ? "Option 2" : "Option 1";
     }
 
+
+    // automatyczny moduł testowy wykonujący n powtórzeń sortowania
     template<typename  T>
     static void runBenchmark() {
         int size = Parameters::structureSize;
@@ -265,6 +283,8 @@ private:
             double currentElapsed = 0;
             string currentStatus = "NIE";
 
+
+            //ładuje dane, mierzy czas sortowania i zapisuje wynik dla tablicy
             if (Parameters::structure == Parameters::Structures::array) {
                 Array<T>* data = FileService<T>::generateRandomArray(size);
                 prepareDistribution(data->getRawPointer(), size, Parameters::distribution);
@@ -277,6 +297,7 @@ private:
                 currentElapsed = chrono::duration<double, milli>(end - start).count();
                 delete data;
             }
+            //ładuje dane, mierzy czas sortowania i zapisuje wynik dla singlellist
             else if (Parameters::structure == Parameters::Structures::singleList) {
 
                 T* temp = new T[size];
@@ -296,7 +317,7 @@ private:
                 delete data;
                 delete[] temp;
 
-            }
+            }//ładuje dane, mierzy czas sortowania i zapisuje wynik dla doublelist
             else if (Parameters::structure == Parameters::Structures::doubleList) {
 
                 T* temp = new T[size];
@@ -316,7 +337,8 @@ private:
                 delete data;
                 delete[] temp;
 
-            }else if (Parameters::structure == Parameters::Structures::binaryTree) {
+            }//ładuje dane, mierzy czas sortowania i zapisuje wynik dla drzewa
+            else if (Parameters::structure == Parameters::Structures::binaryTree) {
                 int n = size;
                 T* tempArr = new T[n];
 
@@ -340,7 +362,8 @@ private:
 
                 delete[] tempArr;
 
-            }else if (Parameters::structure == Parameters::Structures::stack) {
+            }//ładuje dane, mierzy czas sortowania i zapisuje wynik dla stosu
+            else if (Parameters::structure == Parameters::Structures::stack) {
                 Stack<T> stack(size);
                 T* tempArr = new T[size];
                 for(int i = 0; i < size; i++) stack.push(FileService<T>::generateRandomValue());
@@ -366,6 +389,7 @@ private:
 
             totalTime += currentElapsed;
 
+            //zapisuje wszystkie badania do pliku
             FileService<T>::saveBenchmark(
                 Parameters::resultsFile,
                 (r + 1),
@@ -384,6 +408,7 @@ private:
         double averageTime = totalTime / repeats;
         FileService<T>::saveBenchmarkSummary(Parameters::resultsFile, averageTime);
 
+        // po każdą 50 interacji wypisuje ilosc prob, sredni czas , czy posortowane , gdzie zapisane
         cout << "Ilisc prob: " << repeats << endl;
         cout << "Sredni czas: " << averageTime << " ms" << endl;
 
@@ -397,6 +422,7 @@ private:
     }
 
 
+    //sprawdza czy tablica jest posortowana
     template<typename T>
     static string isSorted(Array<T>& arr) {
         for (int i = 0; i < arr.getSize() - 1; i++) {
@@ -405,6 +431,8 @@ private:
         return "TAK";
     }
 
+
+    //sprawdza czy singlelst jest posortowana
     template<typename T>
     static string isSorted(SingleLinkedList<T>& slist) {
         typename SingleLinkedList<T>::Node* curr = slist.head;
@@ -415,6 +443,7 @@ private:
         return "TAK";
     }
 
+    //sprawdza czy doublelist jest posortowana
     template<typename T>
     static string isSorted(DoubleLinkedList<T>& dlist) {
         typename DoubleLinkedList<T>::Node* curr = dlist.head;
@@ -425,6 +454,7 @@ private:
         return "TAK";
     }
 
+    //sprawdza czy tablica jest posortowana, z dodakowym parametrem size
     template<typename T>
     static string isSorted(T* arr, int size) {
         if (arr == nullptr || size <= 0) return "NIE";
@@ -434,6 +464,8 @@ private:
         return "TAK";
     }
 
+
+    // przegotuje różne rozkałady elementów
     template<typename T>
     static void prepareDistribution(T* arr, int size, Parameters::Distribution dist) {
         if (dist == Parameters::Distribution::random) {

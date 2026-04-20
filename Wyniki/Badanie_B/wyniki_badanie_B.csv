@@ -49,8 +49,8 @@ Nr_Proby;Algorytm;Struktura;Typ_Danych;Rozmiar;Pivot;Shell_Option;Distribution;C
 48;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,9578
 49;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,5742
 50;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,8424
-
-SREDNIA;;;;; ; ;4,77985
+;;;;;;;;
+SREDNIA;;;;; ; ;4,77985;
 1;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2,0976
 2;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2,1067
 3;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2,4584
@@ -101,8 +101,8 @@ SREDNIA;;;;; ; ;4,77985
 48;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2,2872
 49;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2,3225
 50;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2,309
-
-SREDNIA;;;;; ; ;2,38583
+;;;;;;;;
+SREDNIA;;;;; ; ;2,38583;
 1;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4,1663
 2;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4,6735
 3;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4,7727
@@ -153,8 +153,8 @@ SREDNIA;;;;; ; ;2,38583
 48;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4,2252
 49;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3,8501
 50;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4,1992
-
-SREDNIA;;;;; ; ;4,15252
+;;;;;;;;
+SREDNIA;;;;; ; ;4,15252;
 1;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2,4287
 2;QuickSort;Tablica;int;25000;Centre;NULL;Descending;3,2483
 3;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2,5311
@@ -205,8 +205,8 @@ SREDNIA;;;;; ; ;4,15252
 48;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2,4043
 49;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2,5981
 50;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2,6179
-
-SREDNIA;;;;; ; ;2,72571
+;;;;;;;;
+SREDNIA;;;;; ; ;2,72571;
 1;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5,1595
 2;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5,3452
 3;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;6,4099
@@ -257,8 +257,8 @@ SREDNIA;;;;; ; ;2,72571
 48;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5,0845
 49;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5,1522
 50;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5,085
-
-SREDNIA;;;;; ; ;5,27161
+;;;;;;;;
+SREDNIA;;;;; ; ;5,27161;
 1;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3,4285
 2;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3,1588
 3;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3,8122
@@ -309,8 +309,8 @@ SREDNIA;;;;; ; ;5,27161
 48;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3,3883
 49;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2,9492
 50;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2,9753
-
-SREDNIA;;;;; ; ;3,40423
+;;;;;;;;
+SREDNIA;;;;; ; ;3,40423;
 1;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5,2605
 2;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;6,3441
 3;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;6,0276
@@ -361,8 +361,8 @@ SREDNIA;;;;; ; ;3,40423
 48;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;8,1159
 49;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;8,128
 50;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;11,1328
-
-SREDNIA;;;;; ; ;7,7933
+;;;;;;;;
+SREDNIA;;;;; ; ;7,7933;
 1;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4,6522
 2;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4,0065
 3;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4,0654
@@ -413,8 +413,8 @@ SREDNIA;;;;; ; ;7,7933
 48;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3,8611
 49;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3,4574
 50;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3,3771
-
-SREDNIA;;;;; ; ;4,19439
+;;;;;;;;
+SREDNIA;;;;; ; ;4,19439;
 1;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5,7882
 2;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5,712
 3;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4,7121
@@ -465,8 +465,8 @@ SREDNIA;;;;; ; ;4,19439
 48;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4,4179
 49;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4,2755
 50;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4,3739
-
-SREDNIA;;;;; ; ;5,31855
+;;;;;;;;
+SREDNIA;;;;; ; ;5,31855;
 1;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2,6977
 2;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;4,3376
 3;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2,7461
@@ -517,8 +517,8 @@ SREDNIA;;;;; ; ;5,31855
 48;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;3,4461
 49;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2,866
 50;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2,9259
-
-SREDNIA;;;;; ; ;2,84258
+;;;;;;;;
+SREDNIA;;;;; ; ;2,84258;
 1;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;5,5326
 2;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4,9401
 3;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;5,0057
@@ -569,8 +569,8 @@ SREDNIA;;;;; ; ;2,84258
 48;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4,7446
 49;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4,4443
 50;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4,7077
-
-SREDNIA;;;;; ; ;4,7513
+;;;;;;;;
+SREDNIA;;;;; ; ;4,7513;
 1;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2,7755
 2;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3,0683
 3;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2,9676
@@ -621,5 +621,5 @@ SREDNIA;;;;; ; ;4,7513
 48;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3,3282
 49;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2,8601
 50;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3,1021
-
-SREDNIA;;;;; ; ;3,12101
+;;;;;;;;
+SREDNIA;;;;; ; ;3,12101;

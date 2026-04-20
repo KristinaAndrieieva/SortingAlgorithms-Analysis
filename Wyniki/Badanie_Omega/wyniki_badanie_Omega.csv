@@ -49,8 +49,8 @@ Nr_Proby;Algorytm;Struktura;Typ_Danych;Rozmiar;Pivot;Shell_Option;Distribution;C
 48;QuickSort;Tablica;int;10000;Centre;NULL;Random;1,9617
 49;QuickSort;Tablica;int;10000;Centre;NULL;Random;1,7568
 50;QuickSort;Tablica;int;10000;Centre;NULL;Random;1,8985
-
-SREDNIA;;;;; ; ;2,1908
+;;;;;;;;
+SREDNIA;;;;; ; ;2,1908;
 1;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3,4344
 2;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3,2685
 3;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3,2271
@@ -101,8 +101,8 @@ SREDNIA;;;;; ; ;2,1908
 48;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2,8272
 49;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2,066
 50;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2,1051
-
-SREDNIA;;;;; ; ;2,7325
+;;;;;;;;
+SREDNIA;;;;; ; ;2,7325;
 1;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1,6275
 2;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1,6472
 3;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2,1174
@@ -153,8 +153,8 @@ SREDNIA;;;;; ; ;2,7325
 48;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2,3792
 49;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;3,767
 50;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1,8734
-
-SREDNIA;;;;; ; ;2,16039
+;;;;;;;;
+SREDNIA;;;;; ; ;2,16039;
 1;Null;Stos;int;10000;Centre;NULL;Random;2,063
 2;Null;Stos;int;10000;Centre;NULL;Random;1,6069
 3;Null;Stos;int;10000;Centre;NULL;Random;1,4317
@@ -205,8 +205,8 @@ SREDNIA;;;;; ; ;2,16039
 48;Null;Stos;int;10000;Centre;NULL;Random;2,9732
 49;Null;Stos;int;10000;Centre;NULL;Random;1,6619
 50;Null;Stos;int;10000;Centre;NULL;Random;2,3142
-
-SREDNIA;;;;; ; ;2,2615
+;;;;;;;;
+SREDNIA;;;;; ; ;2,2615;
 1;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2,677
 2;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3,6049
 3;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3,8096
@@ -257,5 +257,5 @@ SREDNIA;;;;; ; ;2,2615
 48;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3,5239
 49;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2,9484
 50;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2,9597
-
-SREDNIA;;;;; ; ;3,16895
+;;;;;;;;
+SREDNIA;;;;; ; ;3,16895;
