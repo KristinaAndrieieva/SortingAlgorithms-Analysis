@@ -250,6 +250,13 @@ private:
         string shellVal = "NULL";
         if (Parameters::algorithm == Parameters::Algorithms::shell) shellVal = getGapStr();
 
+        string disName = "Random";
+        if (Parameters::distribution == Parameters::Distribution::ascending) disName = "Ascending";
+        if (Parameters::distribution == Parameters::Distribution::descending) disName = "Descending";
+        if (Parameters::distribution == Parameters::Distribution::random) disName = "Random";
+        if (Parameters::distribution == Parameters::Distribution::ascending50Per) disName = "Ascending50Per";
+
+
 
         double totalTime = 0;
         bool allSortedCorrectly = true;
@@ -368,6 +375,7 @@ private:
                 size,
                 pivotVal,
                 shellVal,
+                disName,
                 currentElapsed
             );
         }

@@ -222,7 +222,7 @@ public:
     static void saveBenchmark(const string& fileName, int iteration, const string& alg,
                                   const string& structure, const string& type,
                                   int size, const string& pivot,
-                                  const string& shell, double time) {
+                                  const string& shell,const string& distribution, double time) {
 
         ifstream checkFile(fileName);
         bool exists = checkFile.good();
@@ -232,11 +232,11 @@ public:
         if (!outFile.is_open()) return;
 
         if (!exists) {
-            outFile << "Nr_Proby;Algorytm;Struktura;Typ_Danych;Rozmiar;Pivot;Shell_Option;Czas_ms\n";
+            outFile << "Nr_Proby;Algorytm;Struktura;Typ_Danych;Rozmiar;Pivot;Shell_Option;Distribution;Czas_ms\n";
         }
 
         outFile << iteration << ";" << alg << ";" << structure << ";" << type << ";"
-                << size << ";" << pivot << ";" << shell << ";" << time << "\n";
+                << size << ";" << pivot << ";" << shell << ";" << distribution << ";" << time << "\n";
 
         outFile.close();
     }
