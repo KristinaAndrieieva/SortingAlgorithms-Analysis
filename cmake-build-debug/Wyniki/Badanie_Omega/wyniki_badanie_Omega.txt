@@ -1,0 +1,261 @@
+Nr_Proby;Algorytm;Struktura;Typ_Danych;Rozmiar;Pivot;Shell_Option;Distribution;Czas_ms
+1;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.564
+2;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.6358
+3;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.6963
+4;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.6068
+5;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.7446
+6;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.5919
+7;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.5824
+8;QuickSort;Tablica;int;10000;Centre;NULL;Random;2.43
+9;QuickSort;Tablica;int;10000;Centre;NULL;Random;2.4225
+10;QuickSort;Tablica;int;10000;Centre;NULL;Random;3.2814
+11;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.6532
+12;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.5647
+13;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.6368
+14;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.7107
+15;QuickSort;Tablica;int;10000;Centre;NULL;Random;2.3556
+16;QuickSort;Tablica;int;10000;Centre;NULL;Random;3.6967
+17;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.6642
+18;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.6153
+19;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.8722
+20;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.8674
+21;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.6731
+22;QuickSort;Tablica;int;10000;Centre;NULL;Random;2.0515
+23;QuickSort;Tablica;int;10000;Centre;NULL;Random;2.116
+24;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.8361
+25;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.7677
+26;QuickSort;Tablica;int;10000;Centre;NULL;Random;3.5473
+27;QuickSort;Tablica;int;10000;Centre;NULL;Random;3.8082
+28;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.6282
+29;QuickSort;Tablica;int;10000;Centre;NULL;Random;2.5973
+30;QuickSort;Tablica;int;10000;Centre;NULL;Random;4.0436
+31;QuickSort;Tablica;int;10000;Centre;NULL;Random;4.0709
+32;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.7567
+33;QuickSort;Tablica;int;10000;Centre;NULL;Random;3.9263
+34;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.9023
+35;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.8106
+36;QuickSort;Tablica;int;10000;Centre;NULL;Random;3.4321
+37;QuickSort;Tablica;int;10000;Centre;NULL;Random;3.4216
+38;QuickSort;Tablica;int;10000;Centre;NULL;Random;2.5001
+39;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.5601
+40;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.7809
+41;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.6957
+42;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.8108
+43;QuickSort;Tablica;int;10000;Centre;NULL;Random;2.6832
+44;QuickSort;Tablica;int;10000;Centre;NULL;Random;2.0183
+45;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.8193
+46;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.6824
+47;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.7904
+48;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.9617
+49;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.7568
+50;QuickSort;Tablica;int;10000;Centre;NULL;Random;1.8985
+
+SREDNIA;;;;; ; ;2.1908
+1;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.4344
+2;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.2685
+3;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.2271
+4;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.0764
+5;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.3395
+6;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.2996
+7;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.4339
+8;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.2784
+9;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.3124
+10;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.2697
+11;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.0118
+12;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;4.2148
+13;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;4.4049
+14;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.4056
+15;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.4918
+16;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.1105
+17;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.0748
+18;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.3397
+19;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.5749
+20;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.0445
+21;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.0715
+22;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.0636
+23;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.1292
+24;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.7325
+25;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.6378
+26;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;1.9621
+27;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.5624
+28;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.0246
+29;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.5804
+30;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.5655
+31;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.1281
+32;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.5865
+33;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.8898
+34;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.4598
+35;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.0804
+36;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.103
+37;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.9341
+38;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.1541
+39;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.6265
+40;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;1.9564
+41;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;1.9207
+42;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;1.9815
+43;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.7737
+44;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.503
+45;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;1.9907
+46;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.3612
+47;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;3.2346
+48;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.8272
+49;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.066
+50;QuickSort;Lista jednokierunkowa;int;10000;Centre;NULL;Random;2.1051
+
+SREDNIA;;;;; ; ;2.7325
+1;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.6275
+2;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.6472
+3;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.1174
+4;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.7289
+5;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.5787
+6;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.627
+7;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.7932
+8;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.187
+9;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.6562
+10;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;4.04
+11;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.6572
+12;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.084
+13;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8658
+14;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8352
+15;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.7835
+16;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8571
+17;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.0673
+18;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8467
+19;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.76
+20;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.7669
+21;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8425
+22;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.6885
+23;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.2717
+24;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.1195
+25;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.0523
+26;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.0802
+27;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.7506
+28;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.5154
+29;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8808
+30;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.9894
+31;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8228
+32;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.7934
+33;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8105
+34;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.4573
+35;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.9537
+36;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.3478
+37;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;3.1229
+38;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.4349
+39;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8226
+40;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;3.5453
+41;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8951
+42;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.4496
+43;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;3.262
+44;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.5705
+45;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8197
+46;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8093
+47;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.365
+48;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;2.3792
+49;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;3.767
+50;QuickSort;Lista dwukierunkowa;int;10000;Centre;NULL;Random;1.8734
+
+SREDNIA;;;;; ; ;2.16039
+1;Null;Stos;int;10000;Centre;NULL;Random;2.063
+2;Null;Stos;int;10000;Centre;NULL;Random;1.6069
+3;Null;Stos;int;10000;Centre;NULL;Random;1.4317
+4;Null;Stos;int;10000;Centre;NULL;Random;1.7779
+5;Null;Stos;int;10000;Centre;NULL;Random;1.7622
+6;Null;Stos;int;10000;Centre;NULL;Random;1.9734
+7;Null;Stos;int;10000;Centre;NULL;Random;1.4935
+8;Null;Stos;int;10000;Centre;NULL;Random;1.3542
+9;Null;Stos;int;10000;Centre;NULL;Random;1.6069
+10;Null;Stos;int;10000;Centre;NULL;Random;2.2675
+11;Null;Stos;int;10000;Centre;NULL;Random;3.4317
+12;Null;Stos;int;10000;Centre;NULL;Random;3.9691
+13;Null;Stos;int;10000;Centre;NULL;Random;3.614
+14;Null;Stos;int;10000;Centre;NULL;Random;1.9008
+15;Null;Stos;int;10000;Centre;NULL;Random;1.4148
+16;Null;Stos;int;10000;Centre;NULL;Random;1.5142
+17;Null;Stos;int;10000;Centre;NULL;Random;1.3901
+18;Null;Stos;int;10000;Centre;NULL;Random;1.9829
+19;Null;Stos;int;10000;Centre;NULL;Random;2.4176
+20;Null;Stos;int;10000;Centre;NULL;Random;3.6406
+21;Null;Stos;int;10000;Centre;NULL;Random;1.5826
+22;Null;Stos;int;10000;Centre;NULL;Random;1.4299
+23;Null;Stos;int;10000;Centre;NULL;Random;2.1908
+24;Null;Stos;int;10000;Centre;NULL;Random;3.8873
+25;Null;Stos;int;10000;Centre;NULL;Random;4.0024
+26;Null;Stos;int;10000;Centre;NULL;Random;3.6461
+27;Null;Stos;int;10000;Centre;NULL;Random;1.3417
+28;Null;Stos;int;10000;Centre;NULL;Random;1.8261
+29;Null;Stos;int;10000;Centre;NULL;Random;2.3507
+30;Null;Stos;int;10000;Centre;NULL;Random;3.4922
+31;Null;Stos;int;10000;Centre;NULL;Random;1.4476
+32;Null;Stos;int;10000;Centre;NULL;Random;2.4831
+33;Null;Stos;int;10000;Centre;NULL;Random;2.6836
+34;Null;Stos;int;10000;Centre;NULL;Random;1.3156
+35;Null;Stos;int;10000;Centre;NULL;Random;2.0157
+36;Null;Stos;int;10000;Centre;NULL;Random;3.3709
+37;Null;Stos;int;10000;Centre;NULL;Random;2.3167
+38;Null;Stos;int;10000;Centre;NULL;Random;1.5684
+39;Null;Stos;int;10000;Centre;NULL;Random;1.4594
+40;Null;Stos;int;10000;Centre;NULL;Random;2.398
+41;Null;Stos;int;10000;Centre;NULL;Random;1.6471
+42;Null;Stos;int;10000;Centre;NULL;Random;1.6813
+43;Null;Stos;int;10000;Centre;NULL;Random;1.481
+44;Null;Stos;int;10000;Centre;NULL;Random;2.9695
+45;Null;Stos;int;10000;Centre;NULL;Random;4.3006
+46;Null;Stos;int;10000;Centre;NULL;Random;2.0405
+47;Null;Stos;int;10000;Centre;NULL;Random;2.5839
+48;Null;Stos;int;10000;Centre;NULL;Random;2.9732
+49;Null;Stos;int;10000;Centre;NULL;Random;1.6619
+50;Null;Stos;int;10000;Centre;NULL;Random;2.3142
+
+SREDNIA;;;;; ; ;2.2615
+1;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.677
+2;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.6049
+3;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.8096
+4;Null;Drzewo binarne;int;10000;Centre;NULL;Random;5.1752
+5;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.3822
+6;Null;Drzewo binarne;int;10000;Centre;NULL;Random;4.5703
+7;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.1231
+8;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.1276
+9;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.8338
+10;Null;Drzewo binarne;int;10000;Centre;NULL;Random;4.2426
+11;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.7366
+12;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.9076
+13;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.4816
+14;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.1595
+15;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.2491
+16;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.6691
+17;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.0392
+18;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.5864
+19;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.9483
+20;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.8099
+21;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.4699
+22;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.1868
+23;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.017
+24;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.8675
+25;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.5597
+26;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.8064
+27;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.8994
+28;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.8332
+29;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.8223
+30;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.4852
+31;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.5119
+32;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.8192
+33;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.4974
+34;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.4279
+35;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.5664
+36;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.8513
+37;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.3017
+38;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.9593
+39;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.4374
+40;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.1887
+41;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.1725
+42;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.2073
+43;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.5845
+44;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.894
+45;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.6239
+46;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.295
+47;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.5962
+48;Null;Drzewo binarne;int;10000;Centre;NULL;Random;3.5239
+49;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.9484
+50;Null;Drzewo binarne;int;10000;Centre;NULL;Random;2.9597
+
+SREDNIA;;;;; ; ;3.16895

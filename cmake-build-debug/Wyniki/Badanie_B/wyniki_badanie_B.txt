@@ -1,0 +1,625 @@
+Nr_Proby;Algorytm;Struktura;Typ_Danych;Rozmiar;Pivot;Shell_Option;Distribution;Czas_ms
+1;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.4972
+2;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.8286
+3;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.9687
+4;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.7686
+5;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.4772
+6;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.9445
+7;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.8289
+8;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.5989
+9;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.5452
+10;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.5937
+11;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.7775
+12;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.7653
+13;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.7184
+14;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.6389
+15;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.5532
+16;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.4379
+17;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.6847
+18;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.5381
+19;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.1157
+20;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.7066
+21;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3217
+22;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3451
+23;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3824
+24;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.4218
+25;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.5339
+26;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.4734
+27;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.5413
+28;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.585
+29;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.6673
+30;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.7026
+31;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3952
+32;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.4505
+33;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.7061
+34;QuickSort;Tablica;int;25000;Centre;NULL;Random;6.279
+35;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.9203
+36;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.6258
+37;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.6004
+38;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.655
+39;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.1166
+40;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.0722
+41;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3853
+42;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.2784
+43;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.2062
+44;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.5989
+45;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.8165
+46;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.1338
+47;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.4156
+48;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.9578
+49;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.5742
+50;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.8424
+
+SREDNIA;;;;; ; ;4.77985
+1;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.0976
+2;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1067
+3;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.4584
+4;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1365
+5;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1081
+6;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1673
+7;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1308
+8;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1802
+9;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.128
+10;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1001
+11;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1001
+12;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.7727
+13;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1963
+14;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3993
+15;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.8195
+16;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3364
+17;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.2576
+18;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1896
+19;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.2494
+20;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1573
+21;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1293
+22;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1865
+23;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1245
+24;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.0941
+25;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.2727
+26;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3348
+27;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3924
+28;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3619
+29;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3928
+30;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3182
+31;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3497
+32;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.7086
+33;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.5167
+34;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3175
+35;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;4.0099
+36;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3944
+37;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.2879
+38;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3194
+39;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3347
+40;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.6212
+41;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3055
+42;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.7187
+43;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;3.8136
+44;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.6203
+45;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;3.1455
+46;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1077
+47;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.1026
+48;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.2872
+49;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.3225
+50;QuickSort;Tablica;int;25000;Centre;NULL;Ascending;2.309
+
+SREDNIA;;;;; ; ;2.38583
+1;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.1663
+2;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.6735
+3;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.7727
+4;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.2514
+5;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.07
+6;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.9357
+7;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.4208
+8;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.1072
+9;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.9983
+10;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.8676
+11;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.1013
+12;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.9823
+13;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.0237
+14;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.8843
+15;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.5855
+16;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.926
+17;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.3212
+18;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.3573
+19;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.7656
+20;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;5.0021
+21;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.1249
+22;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.9612
+23;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.9907
+24;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.9565
+25;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.3524
+26;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.8752
+27;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.0414
+28;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.8536
+29;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.1494
+30;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.0007
+31;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.1747
+32;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.3772
+33;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.0165
+34;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.2315
+35;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.2117
+36;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.3169
+37;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.5269
+38;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.2931
+39;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.112
+40;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.8589
+41;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.9832
+42;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.2765
+43;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.9995
+44;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.3097
+45;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.9094
+46;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.1921
+47;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.0431
+48;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.2252
+49;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;3.8501
+50;QuickSort;Tablica;int;25000;Centre;NULL;Ascending50Per;4.1992
+
+SREDNIA;;;;; ; ;4.15252
+1;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.4287
+2;QuickSort;Tablica;int;25000;Centre;NULL;Descending;3.2483
+3;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.5311
+4;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.84
+5;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.643
+6;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.4022
+7;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.4963
+8;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.5096
+9;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.3975
+10;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.4328
+11;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.5567
+12;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.4088
+13;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.4081
+14;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.5782
+15;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.4456
+16;QuickSort;Tablica;int;25000;Centre;NULL;Descending;3.5298
+17;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.756
+18;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.7157
+19;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.7445
+20;QuickSort;Tablica;int;25000;Centre;NULL;Descending;4.1246
+21;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.647
+22;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.7246
+23;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6643
+24;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6684
+25;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6293
+26;QuickSort;Tablica;int;25000;Centre;NULL;Descending;3.0266
+27;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6531
+28;QuickSort;Tablica;int;25000;Centre;NULL;Descending;4.3019
+29;QuickSort;Tablica;int;25000;Centre;NULL;Descending;3.0827
+30;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6387
+31;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.8667
+32;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6166
+33;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6199
+34;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6786
+35;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6318
+36;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6253
+37;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6831
+38;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.7005
+39;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.4967
+40;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6538
+41;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.441
+42;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.7881
+43;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.863
+44;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.8603
+45;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.9114
+46;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.5632
+47;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.431
+48;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.4043
+49;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.5981
+50;QuickSort;Tablica;int;25000;Centre;NULL;Descending;2.6179
+
+SREDNIA;;;;; ; ;2.72571
+1;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.1595
+2;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.3452
+3;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;6.4099
+4;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.2822
+5;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.3791
+6;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.1673
+7;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;4.9001
+8;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.465
+9;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.0991
+10;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.35
+11;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.3387
+12;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.9602
+13;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.0889
+14;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.5125
+15;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.2464
+16;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.1409
+17;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.1119
+18;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.3153
+19;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.0301
+20;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.0076
+21;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.2443
+22;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.4748
+23;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.3482
+24;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;6.0774
+25;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.3575
+26;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.6179
+27;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.5426
+28;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.6075
+29;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.3922
+30;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.0287
+31;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.5286
+32;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.2256
+33;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.451
+34;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.1896
+35;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;4.9054
+36;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.2834
+37;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;4.9104
+38;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.0774
+39;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.001
+40;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.0556
+41;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.3966
+42;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.1195
+43;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;4.9076
+44;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.5671
+45;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;4.8636
+46;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;4.8118
+47;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;4.9636
+48;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.0845
+49;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.1522
+50;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Random;5.085
+
+SREDNIA;;;;; ; ;5.27161
+1;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.4285
+2;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.1588
+3;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.8122
+4;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;4.3144
+5;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.7176
+6;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.6766
+7;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.4255
+8;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;4.0559
+9;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.5946
+10;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.2742
+11;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.5884
+12;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.1496
+13;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.225
+14;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.5641
+15;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.3135
+16;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;4.2055
+17;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;4.3174
+18;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.8377
+19;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.9671
+20;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;8.2123
+21;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.2606
+22;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9602
+23;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.1035
+24;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.0381
+25;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.0532
+26;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9317
+27;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.1345
+28;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9104
+29;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.884
+30;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.1863
+31;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.1072
+32;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.063
+33;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.2122
+34;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9085
+35;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9198
+36;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9976
+37;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9888
+38;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9924
+39;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.5468
+40;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9558
+41;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.8084
+42;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.8532
+43;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.6148
+44;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.857
+45;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9503
+46;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.1969
+47;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.6246
+48;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;3.3883
+49;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9492
+50;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending;2.9753
+
+SREDNIA;;;;; ; ;3.40423
+1;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.2605
+2;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;6.3441
+3;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;6.0276
+4;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.3587
+5;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.026
+6;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;4.8698
+7;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.0515
+8;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.4907
+9;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.1217
+10;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;4.8521
+11;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;4.9456
+12;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;4.9597
+13;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.2175
+14;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;4.995
+15;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.2431
+16;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;4.8834
+17;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.4313
+18;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.2884
+19;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.4781
+20;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.3786
+21;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.889
+22;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;7.4025
+23;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.466
+24;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.1978
+25;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.6973
+26;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;5.9586
+27;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;6.5705
+28;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;7.1595
+29;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;6.4815
+30;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;6.0126
+31;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;8.5154
+32;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;6.305
+33;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;9.4964
+34;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;11.7691
+35;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;12.6617
+36;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;11.7274
+37;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;12.0574
+38;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;13.4936
+39;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;16.5628
+40;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;11.6994
+41;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;14.1131
+42;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;11.0838
+43;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;13.1905
+44;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;11.8108
+45;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;9.8102
+46;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;12.7077
+47;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;8.2254
+48;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;8.1159
+49;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;8.128
+50;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Ascending50Per;11.1328
+
+SREDNIA;;;;; ; ;7.7933
+1;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.6522
+2;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.0065
+3;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.0654
+4;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.3017
+5;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;5.73
+6;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.9426
+7;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.6091
+8;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.8697
+9;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.4919
+10;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;14.2493
+11;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.5465
+12;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.5372
+13;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.993
+14;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.0287
+15;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.9372
+16;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.2405
+17;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;5.4397
+18;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.0644
+19;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.7437
+20;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.0765
+21;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;6.2527
+22;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;5.2708
+23;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.4437
+24;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.5149
+25;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.4823
+26;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.575
+27;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.5868
+28;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;4.5474
+29;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.4837
+30;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.3632
+31;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.8107
+32;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.9358
+33;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.5388
+34;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.951
+35;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.719
+36;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.5944
+37;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.5611
+38;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.6424
+39;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.6351
+40;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.4139
+41;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.718
+42;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.4703
+43;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.6728
+44;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.9334
+45;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.9178
+46;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.904
+47;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.5593
+48;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.8611
+49;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.4574
+50;QuickSort;Lista jednokierunkowa;int;25000;Centre;NULL;Descending;3.3771
+
+SREDNIA;;;;; ; ;4.19439
+1;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5.7882
+2;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5.712
+3;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.7121
+4;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.8628
+5;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.9561
+6;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.7807
+7;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5.184
+8;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5.8074
+9;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5.8704
+10;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;6.0297
+11;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5.1754
+12;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5.0292
+13;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.821
+14;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;7.6585
+15;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.9698
+16;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5.1767
+17;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;7.6257
+18;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;8.0649
+19;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;7.4508
+20;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;9.8831
+21;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.7131
+22;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;7.0882
+23;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;8.3584
+24;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.4755
+25;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.4175
+26;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.4307
+27;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5.0718
+28;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;5.0769
+29;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.6608
+30;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.523
+31;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.6466
+32;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.6428
+33;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;6.1448
+34;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.7016
+35;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.9156
+36;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.6741
+37;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.6137
+38;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.4104
+39;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.8308
+40;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.313
+41;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.7302
+42;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.4544
+43;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.9767
+44;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.5068
+45;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.9601
+46;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.5448
+47;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.4196
+48;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.4179
+49;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.2755
+50;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Random;4.3739
+
+SREDNIA;;;;; ; ;5.31855
+1;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.6977
+2;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;4.3376
+3;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.7461
+4;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5544
+5;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;4.1146
+6;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5703
+7;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;3.2418
+8;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5238
+9;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.6668
+10;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4518
+11;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4444
+12;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4721
+13;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4924
+14;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4519
+15;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5877
+16;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5381
+17;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4633
+18;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5363
+19;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5694
+20;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5162
+21;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4552
+22;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4448
+23;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4984
+24;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5796
+25;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4915
+26;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4348
+27;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5581
+28;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5139
+29;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.5455
+30;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4904
+31;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4188
+32;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.4102
+33;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.7991
+34;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.9584
+35;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;3.3656
+36;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;3.2043
+37;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;3.4788
+38;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;3.9463
+39;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.733
+40;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;3.3048
+41;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.9001
+42;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.778
+43;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.7427
+44;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.9863
+45;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;3.5242
+46;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.7693
+47;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;4.5824
+48;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;3.4461
+49;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.866
+50;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending;2.9259
+
+SREDNIA;;;;; ; ;2.84258
+1;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;5.5326
+2;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.9401
+3;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;5.0057
+4;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.876
+5;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.702
+6;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;7.8164
+7;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;5.7934
+8;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;5.3013
+9;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.3646
+10;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.7803
+11;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.4921
+12;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.9198
+13;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.6841
+14;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.5733
+15;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.6374
+16;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.6921
+17;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.1727
+18;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.0713
+19;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.2494
+20;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.2216
+21;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.3093
+22;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;6.7523
+23;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;5.115
+24;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.4754
+25;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.7741
+26;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.5271
+27;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.666
+28;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;5.4978
+29;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.1554
+30;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.2873
+31;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.1996
+32;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.7399
+33;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;5.7543
+34;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.9777
+35;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.5904
+36;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.4116
+37;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.3
+38;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.3475
+39;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.2456
+40;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.3904
+41;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.8937
+42;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.1669
+43;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.8222
+44;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.0305
+45;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.4776
+46;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.5564
+47;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.3784
+48;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.7446
+49;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.4443
+50;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Ascending50Per;4.7077
+
+SREDNIA;;;;; ; ;4.7513
+1;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.7755
+2;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.0683
+3;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.9676
+4;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.2527
+5;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.8171
+6;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.6792
+7;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.7225
+8;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.7871
+9;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.7594
+10;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.7941
+11;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.8286
+12;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.0172
+13;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.7979
+14;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.4272
+15;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.4892
+16;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.5697
+17;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.4277
+18;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;4.6143
+19;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.4804
+20;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;4.0464
+21;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.8051
+22;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.9824
+23;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.0968
+24;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.9227
+25;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.0057
+26;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;5.69
+27;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.633
+28;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.1607
+29;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.1083
+30;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.0487
+31;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.1846
+32;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.95
+33;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.0947
+34;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.017
+35;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.9194
+36;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.8121
+37;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.7983
+38;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.714
+39;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.8275
+40;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.6805
+41;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.7487
+42;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.7322
+43;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.8763
+44;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.9913
+45;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.6728
+46;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.0321
+47;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.9332
+48;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.3282
+49;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;2.8601
+50;QuickSort;Lista dwukierunkowa;int;25000;Centre;NULL;Descending;3.1021
+
+SREDNIA;;;;; ; ;3.12101
