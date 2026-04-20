@@ -1,209 +1,209 @@
 Nr_Proby;Algorytm;Struktura;Typ_Danych;Rozmiar;Pivot;Shell_Option;Distribution;Czas_ms
-1;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.2504
-2;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.9442
-3;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.9769
-4;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.194
-5;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3498
-6;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.1663
-7;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3943
-8;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.8396
-9;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.4294
-10;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3844
-11;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.8575
-12;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3872
-13;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.2
-14;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.6071
-15;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.2651
-16;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.5924
-17;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.5084
-18;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.6812
-19;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.4042
-20;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.8218
-21;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.2979
-22;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.4356
-23;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.5075
-24;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.4036
-25;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.2366
-26;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.1464
-27;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3726
-28;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3697
-29;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.0805
-30;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3979
-31;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.4584
-32;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.0857
-33;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.182
-34;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.8185
-35;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.2291
-36;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3128
-37;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.198
-38;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.0656
-39;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3737
-40;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.2794
-41;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.1309
-42;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.3867
-43;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.3406
-44;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.9503
-45;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.2533
-46;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.2469
-47;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.2347
-48;QuickSort;Tablica;int;25000;Centre;NULL;Random;5.7042
-49;QuickSort;Tablica;int;25000;Centre;NULL;Random;6.0282
-50;QuickSort;Tablica;int;25000;Centre;NULL;Random;4.8905
+1;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,2504
+2;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,9442
+3;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,9769
+4;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,194
+5;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,3498
+6;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,1663
+7;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,3943
+8;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,8396
+9;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,4294
+10;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,3844
+11;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,8575
+12;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,3872
+13;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,2
+14;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,6071
+15;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,2651
+16;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,5924
+17;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,5084
+18;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,6812
+19;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,4042
+20;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,8218
+21;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,2979
+22;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,4356
+23;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,5075
+24;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,4036
+25;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,2366
+26;QuickSort;Tablica;int;25000;Centre;NULL;Random;5,1464
+27;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,3726
+28;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,3697
+29;QuickSort;Tablica;int;25000;Centre;NULL;Random;5,0805
+30;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,3979
+31;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,4584
+32;QuickSort;Tablica;int;25000;Centre;NULL;Random;5,0857
+33;QuickSort;Tablica;int;25000;Centre;NULL;Random;5,182
+34;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,8185
+35;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,2291
+36;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,3128
+37;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,198
+38;QuickSort;Tablica;int;25000;Centre;NULL;Random;5,0656
+39;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,3737
+40;QuickSort;Tablica;int;25000;Centre;NULL;Random;5,2794
+41;QuickSort;Tablica;int;25000;Centre;NULL;Random;5,1309
+42;QuickSort;Tablica;int;25000;Centre;NULL;Random;5,3867
+43;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,3406
+44;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,9503
+45;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,2533
+46;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,2469
+47;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,2347
+48;QuickSort;Tablica;int;25000;Centre;NULL;Random;5,7042
+49;QuickSort;Tablica;int;25000;Centre;NULL;Random;6,0282
+50;QuickSort;Tablica;int;25000;Centre;NULL;Random;4,8905
 
-SREDNIA;;;;; ; ;4.63344
-1;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.9581
-2;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.4931
-3;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.6175
-4;QuickSort;Tablica;float;25000;Centre;NULL;Random;7.2219
-5;QuickSort;Tablica;float;25000;Centre;NULL;Random;6.9999
-6;QuickSort;Tablica;float;25000;Centre;NULL;Random;6.6736
-7;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.4534
-8;QuickSort;Tablica;float;25000;Centre;NULL;Random;6.1144
-9;QuickSort;Tablica;float;25000;Centre;NULL;Random;7.9472
-10;QuickSort;Tablica;float;25000;Centre;NULL;Random;7.5083
-11;QuickSort;Tablica;float;25000;Centre;NULL;Random;6.2512
-12;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.5662
-13;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.0127
-14;QuickSort;Tablica;float;25000;Centre;NULL;Random;6.1102
-15;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.38
-16;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.2997
-17;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.4083
-18;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.5509
-19;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.7447
-20;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.3329
-21;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.7928
-22;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.2268
-23;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.5828
-24;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.4251
-25;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.5383
-26;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.5827
-27;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.5977
-28;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.6318
-29;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.7352
-30;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.5982
-31;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.5227
-32;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.7037
-33;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.3728
-34;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.4808
-35;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.0537
-36;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.4252
-37;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.3785
-38;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.1895
-39;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.6682
-40;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.3263
-41;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.9007
-42;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.3335
-43;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.5054
-44;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.6074
-45;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.4399
-46;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.1401
-47;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.9313
-48;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.5915
-49;QuickSort;Tablica;float;25000;Centre;NULL;Random;4.7902
-50;QuickSort;Tablica;float;25000;Centre;NULL;Random;5.8804
+SREDNIA;;;;; ; ;4,63344
+1;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,9581
+2;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,4931
+3;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,6175
+4;QuickSort;Tablica;float;25000;Centre;NULL;Random;7,2219
+5;QuickSort;Tablica;float;25000;Centre;NULL;Random;6,9999
+6;QuickSort;Tablica;float;25000;Centre;NULL;Random;6,6736
+7;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,4534
+8;QuickSort;Tablica;float;25000;Centre;NULL;Random;6,1144
+9;QuickSort;Tablica;float;25000;Centre;NULL;Random;7,9472
+10;QuickSort;Tablica;float;25000;Centre;NULL;Random;7,5083
+11;QuickSort;Tablica;float;25000;Centre;NULL;Random;6,2512
+12;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,5662
+13;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,0127
+14;QuickSort;Tablica;float;25000;Centre;NULL;Random;6,1102
+15;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,38
+16;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,2997
+17;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,4083
+18;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,5509
+19;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,7447
+20;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,3329
+21;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,7928
+22;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,2268
+23;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,5828
+24;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,4251
+25;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,5383
+26;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,5827
+27;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,5977
+28;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,6318
+29;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,7352
+30;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,5982
+31;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,5227
+32;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,7037
+33;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,3728
+34;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,4808
+35;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,0537
+36;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,4252
+37;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,3785
+38;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,1895
+39;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,6682
+40;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,3263
+41;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,9007
+42;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,3335
+43;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,5054
+44;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,6074
+45;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,4399
+46;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,1401
+47;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,9313
+48;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,5915
+49;QuickSort;Tablica;float;25000;Centre;NULL;Random;4,7902
+50;QuickSort;Tablica;float;25000;Centre;NULL;Random;5,8804
 
-SREDNIA;;;;; ; ;5.13195
-1;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.4196
-2;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.9133
-3;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.3259
-4;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.2648
-5;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.1858
-6;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.7629
-7;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.26
-8;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.758
-9;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.0865
-10;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.373
-11;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.465
-12;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.5517
-13;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.2993
-14;QuickSort;Tablica;string;25000;Centre;NULL;Random;9.9549
-15;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.6067
-16;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.7268
-17;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.2341
-18;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.8426
-19;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.5345
-20;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.5462
-21;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.9014
-22;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.323
-23;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.3782
-24;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.8187
-25;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.5744
-26;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.8226
-27;QuickSort;Tablica;string;25000;Centre;NULL;Random;12.0378
-28;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.7925
-29;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.5893
-30;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.0271
-31;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.6739
-32;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.7602
-33;QuickSort;Tablica;string;25000;Centre;NULL;Random;13.4514
-34;QuickSort;Tablica;string;25000;Centre;NULL;Random;12.0309
-35;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.02
-36;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.144
-37;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.6682
-38;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.2778
-39;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.1064
-40;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.8576
-41;QuickSort;Tablica;string;25000;Centre;NULL;Random;12.0184
-42;QuickSort;Tablica;string;25000;Centre;NULL;Random;13.9006
-43;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.1422
-44;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.8682
-45;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.1449
-46;QuickSort;Tablica;string;25000;Centre;NULL;Random;11.1813
-47;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.3771
-48;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.5144
-49;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.5302
-50;QuickSort;Tablica;string;25000;Centre;NULL;Random;10.1412
+SREDNIA;;;;; ; ;5,13195
+1;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,4196
+2;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,9133
+3;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,3259
+4;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,2648
+5;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,1858
+6;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,7629
+7;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,26
+8;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,758
+9;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,0865
+10;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,373
+11;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,465
+12;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,5517
+13;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,2993
+14;QuickSort;Tablica;string;25000;Centre;NULL;Random;9,9549
+15;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,6067
+16;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,7268
+17;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,2341
+18;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,8426
+19;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,5345
+20;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,5462
+21;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,9014
+22;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,323
+23;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,3782
+24;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,8187
+25;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,5744
+26;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,8226
+27;QuickSort;Tablica;string;25000;Centre;NULL;Random;12,0378
+28;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,7925
+29;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,5893
+30;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,0271
+31;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,6739
+32;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,7602
+33;QuickSort;Tablica;string;25000;Centre;NULL;Random;13,4514
+34;QuickSort;Tablica;string;25000;Centre;NULL;Random;12,0309
+35;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,02
+36;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,144
+37;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,6682
+38;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,2778
+39;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,1064
+40;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,8576
+41;QuickSort;Tablica;string;25000;Centre;NULL;Random;12,0184
+42;QuickSort;Tablica;string;25000;Centre;NULL;Random;13,9006
+43;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,1422
+44;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,8682
+45;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,1449
+46;QuickSort;Tablica;string;25000;Centre;NULL;Random;11,1813
+47;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,3771
+48;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,5144
+49;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,5302
+50;QuickSort;Tablica;string;25000;Centre;NULL;Random;10,1412
 
-SREDNIA;;;;; ; ;11.0037
-1;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;626.075
-2;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;652.365
-3;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;659.002
-4;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;698.455
-5;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;656.463
-6;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;681.032
-7;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;675.094
-8;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;666.707
-9;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;648.797
-10;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;640.205
-11;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;658.586
-12;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;638.186
-13;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;744.83
-14;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;692.666
-15;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;659.273
-16;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;641.896
-17;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;659.203
-18;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;638.153
-19;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;833.644
-20;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;667.003
-21;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;647.213
-22;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;665.903
-23;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;645.819
-24;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;661.287
-25;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;646.55
-26;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;839.2
-27;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;659.145
-28;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;675.989
-29;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;649.133
-30;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;677.417
-31;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;662.471
-32;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;670.545
-33;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;670.307
-34;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;829.656
-35;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;700.307
-36;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;687.278
-37;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;677.491
-38;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;652.078
-39;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;679.081
-40;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;660.67
-41;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;676.477
-42;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;673.746
-43;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;675.779
-44;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;688.554
-45;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;679.559
-46;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;676.611
-47;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;663.615
-48;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;686.161
-49;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;680.343
-50;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;713.611
+SREDNIA;;;;; ; ;11,0037
+1;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;626,075
+2;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;652,365
+3;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;659,002
+4;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;698,455
+5;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;656,463
+6;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;681,032
+7;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;675,094
+8;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;666,707
+9;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;648,797
+10;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;640,205
+11;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;658,586
+12;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;638,186
+13;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;744,83
+14;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;692,666
+15;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;659,273
+16;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;641,896
+17;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;659,203
+18;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;638,153
+19;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;833,644
+20;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;667,003
+21;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;647,213
+22;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;665,903
+23;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;645,819
+24;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;661,287
+25;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;646,55
+26;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;839,2
+27;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;659,145
+28;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;675,989
+29;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;649,133
+30;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;677,417
+31;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;662,471
+32;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;670,545
+33;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;670,307
+34;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;829,656
+35;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;700,307
+36;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;687,278
+37;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;677,491
+38;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;652,078
+39;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;679,081
+40;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;660,67
+41;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;676,477
+42;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;673,746
+43;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;675,779
+44;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;688,554
+45;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;679,559
+46;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;676,611
+47;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;663,615
+48;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;686,161
+49;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;680,343
+50;QuickSort;Tablica;unsigned int;25000;Centre;NULL;Random;713,611
 
-SREDNIA;;;;; ; ;678.193
+SREDNIA;;;;; ; ;678,193
